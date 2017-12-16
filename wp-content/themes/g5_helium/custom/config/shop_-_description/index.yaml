@@ -1,0 +1,37 @@
+name: shop_-_description
+timestamp: 1513307301
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/2-col-right.png'
+  name: 2-col-right
+  timestamp: 1513307168
+positions:
+  header: Header
+  aside: Aside
+sections:
+  header: Header
+  navigation: Navigation
+  messages: Messages
+  main: Main
+  footer: Footer
+  aside: Aside
+  offcanvas: Offcanvas
+particles:
+  position:
+    position-header: Header
+    position-aside: Aside
+  menu:
+    menu-8139: Menu
+  messages:
+    system-messages-9548: 'System Messages'
+  content:
+    system-content-6156: 'Page Content'
+  copyright:
+    copyright-4351: Copyright
+  spacer:
+    spacer-4575: Spacer
+  branding:
+    branding-8622: Branding
+  mobile-menu:
+    mobile-menu-1058: Mobile-menu
+inherit: {  }

@@ -1,0 +1,19 @@
+{
+	"folders":
+	[
+        {
+            "name": "Publisher",
+            "path": "/Users/ericteubert/code/valet/publisher/wp-content/plugins/podlove-publisher",
+            "folder_exclude_patterns": [
+                "node_modules"
+            ]
+        },
+		{
+			"name": "WordPress Core",
+			"path": "/Users/ericteubert/code/valet/publisher",
+            "folder_exclude_patterns": [
+                "wp-content/plugins/podlove-publisher"
+            ]
+		}
+	]
+}

@@ -1,0 +1,209 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: default
+  timestamp: 1513089165
+layout:
+  navigation: {  }
+  /header/:
+    -
+      - logo-1334
+  /intro/:
+    -
+      - logo-5980
+    -
+      - custom-3566
+    -
+      - contentarray-7489
+  /features/:
+    -
+      - custom-9016
+    -
+      - social-2204
+  /utility/: {  }
+  /above/: {  }
+  /testimonials/:
+    -
+      - custom-2018
+    -
+      - 'menu-9529 25'
+      - 'contentarray-9821 75'
+  /expanded/: {  }
+  /container-main/:
+    -
+      -
+        'aside 25': {  }
+      -
+        'mainbar 50': {  }
+      -
+        'sidebar 25': {  }
+  footer: {  }
+  /offcanvas/:
+    -
+      - mobile-menu-6875
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+  intro:
+    type: section
+    attributes:
+      boxed: ''
+  features:
+    type: section
+    attributes:
+      boxed: ''
+  utility:
+    type: section
+    attributes:
+      boxed: '2'
+      class: ''
+  above:
+    type: section
+    attributes:
+      boxed: ''
+  testimonials:
+    type: section
+    attributes:
+      boxed: ''
+  expanded:
+    type: section
+    attributes:
+      boxed: ''
+  aside:
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  mainbar:
+    type: section
+    subtype: main
+  sidebar:
+    type: section
+    subtype: aside
+    attributes:
+      class: ''
+    block:
+      fixed: '1'
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  offcanvas:
+    attributes:
+      boxed: ''
+content:
+  logo-1334:
+    title: 'Logo / Image'
+    attributes:
+      url: ''
+      target: _self
+      image: ''
+      link: '0'
+      svg: ''
+      text: ''
+      class: ''
+  logo-5980:
+    title: 'Logo / Image'
+    attributes:
+      url: ''
+      image: 'gantry-media://2017/12/pexels-photo-235516.jpeg'
+      link: '0'
+      svg: ''
+      text: ''
+      class: ''
+  custom-3566:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div>\n<div>The CEO</div>\n<h3>Tamara McCutcheon</h3>\n<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>\n</div>"
+      twig: '0'
+      filter: '0'
+  contentarray-7489:
+    title: 'WordPress Posts'
+    attributes:
+      post:
+        filter:
+          categories: '18'
+          posts: ''
+          sticky: ''
+        limit:
+          total: '4'
+          columns: '4'
+          start: '0'
+        sort:
+          orderby: date
+          ordering: ASC
+        display:
+          image:
+            enabled: show
+          title:
+            enabled: show
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+          comments:
+            enabled: ''
+          text:
+            type: content
+  custom-9016:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div>\n<div>Our Sponsors</div>\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>\n</div>"
+      twig: '0'
+      filter: '0'
+  custom-2018:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div>\n<div>Our Initiatives</div>\n</div>"
+      twig: '0'
+      filter: '0'
+  menu-9529:
+    attributes:
+      menu: initiatives
+      base: /
+  contentarray-9821:
+    title: 'WordPress Posts'
+    attributes:
+      post:
+        filter:
+          categories: '19'
+          posts: ''
+          sticky: ''
+        limit:
+          total: '1'
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: date
+          ordering: DESC
+        display:
+          title:
+            enabled: show
+          date:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+          comments:
+            enabled: ''
+          text:
+            formatting: html

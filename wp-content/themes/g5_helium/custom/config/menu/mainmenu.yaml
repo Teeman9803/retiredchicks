@@ -1,0 +1,27 @@
+ordering:
+  about: ''
+  shop: ''
+  podcasts: ''
+  blog: ''
+  rc-of-the-month: ''
+  contact: ''
+  cart: ''
+items:
+  about:
+    object_id: 16
+  shop:
+    object_id: 19
+  podcasts:
+    object_id: 22
+  blog:
+    object_id: 25
+  rc-of-the-month:
+    object_id: 28
+  contact:
+    object_id: 31
+  cart:
+    dropdown_dir: right
+    dropdown_hide: '0'
+    width: auto
+    icon: 'fa fa-shopping-cart'
+    icon_only: '1'

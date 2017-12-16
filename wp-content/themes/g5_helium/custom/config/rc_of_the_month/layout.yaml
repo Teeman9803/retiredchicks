@@ -1,0 +1,49 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: fullpage
+  timestamp: 1513263333
+layout:
+  /navigation/:
+    -
+      - system-messages-7972
+    -
+      - 'logo-9608 15'
+      - 'menu-6409 65'
+  /header/: {  }
+  /main/:
+    -
+      - position-breadcrumbs
+    -
+      - system-content-7703
+  /footer/:
+    -
+      - position-footer
+    -
+      - 'copyright-5001 40'
+      - 'spacer-9293 30'
+      - 'branding-2142 30'
+  offcanvas:
+    -
+      - mobile-menu-6314
+structure:
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  header:
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  position-footer:
+    attributes:
+      key: footer

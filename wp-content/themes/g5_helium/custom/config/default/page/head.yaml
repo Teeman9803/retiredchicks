@@ -1,0 +1,13 @@
+meta: {  }
+head_bottom: ''
+atoms:
+  -
+    title: 'Google Analytics'
+    type: analytics
+    attributes:
+      enabled: true
+      ua:
+        anonym: false
+        ssl: false
+        debug: false
+    id: analytics-6662

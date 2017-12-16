@@ -1,0 +1,45 @@
+name: initiatives
+timestamp: 1513308170
+version: 7
+preset:
+  image: 'gantry-media://images/admin/layouts/2-col-left.png'
+  name: 2-col-left
+  timestamp: 1513307855
+positions:
+  sidebar: Sidebar
+  right: Right
+  breadcrumbs: Breadcrumbs
+  footer: Footer
+sections:
+  navigation: Navigation
+  header: Header
+  sidebar: Sidebar
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-7972: 'System Messages'
+    system-messages-9361: 'System Messages'
+  logo:
+    logo-9608: Logo
+  menu:
+    menu-6409: Menu
+  social:
+    social-7182: Social
+  position:
+    position-sidebar: Sidebar
+    position-right: Right
+    position-breadcrumbs: Breadcrumbs
+    position-footer: Footer
+  content:
+    system-content-4937: 'Page Content'
+  copyright:
+    copyright-6344: Copyright
+  spacer:
+    spacer-1184: Spacer
+  branding:
+    branding-9291: Branding
+  mobile-menu:
+    mobile-menu-5769: Mobile-menu
+inherit: {  }

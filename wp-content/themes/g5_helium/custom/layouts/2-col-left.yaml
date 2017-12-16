@@ -1,0 +1,42 @@
+version: 2
+
+preset:
+  image: gantry-media://images/admin/layouts/2-col-left.png
+
+layout:
+  /navigation/:
+   -
+     - system-messages-7972
+   -
+     - 'logo-9608 15'
+     - 'menu-6409 65'
+  /header/: {  }
+
+  /container-main/:
+    -
+      - sidebar 20:
+        - social
+        - position-sidebar
+        - position-left
+      - main 60:
+        - position-breadcrumbs
+        - system-messages
+        - system-content
+
+  /footer/:
+    -
+      - position-footer
+    -
+      - copyright 40
+      - spacer 30
+      - branding 30
+
+  offcanvas:
+    -
+      - mobile-menu
+
+structure:
+  sidebar:
+    subtype: aside
+    block:
+      fixed: 1

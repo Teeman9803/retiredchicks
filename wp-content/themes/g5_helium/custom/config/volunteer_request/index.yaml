@@ -1,0 +1,37 @@
+name: volunteer_request
+timestamp: 1513308228
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: fullpage
+  timestamp: 1513263333
+positions:
+  breadcrumbs: Breadcrumbs
+  footer: Footer
+sections:
+  navigation: Navigation
+  header: Header
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-7972: 'System Messages'
+  logo:
+    logo-9608: Logo
+  menu:
+    menu-6409: Menu
+  position:
+    position-breadcrumbs: Breadcrumbs
+    position-footer: Footer
+  content:
+    system-content-3737: 'Page Content'
+  copyright:
+    copyright-5536: Copyright
+  spacer:
+    spacer-5644: Spacer
+  branding:
+    branding-9863: Branding
+  mobile-menu:
+    mobile-menu-8826: Mobile-menu
+inherit: {  }

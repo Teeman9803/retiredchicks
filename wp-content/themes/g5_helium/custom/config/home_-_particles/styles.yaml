@@ -1,0 +1,5 @@
+preset: preset6
+font:
+  family-default: 'Raleway, Helvetica, Tahoma, Geneva, Arial, sans-serif'
+menu:
+  animation: g-fade

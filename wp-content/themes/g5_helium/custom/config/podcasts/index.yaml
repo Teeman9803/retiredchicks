@@ -1,0 +1,37 @@
+name: podcasts
+timestamp: 1513307250
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/2-col-right.png'
+  name: 2-col-right
+  timestamp: 1513307168
+positions:
+  header: Header
+  aside: Aside
+sections:
+  header: Header
+  navigation: Navigation
+  messages: Messages
+  main: Main
+  footer: Footer
+  aside: Aside
+  offcanvas: Offcanvas
+particles:
+  position:
+    position-header: Header
+    position-aside: Aside
+  menu:
+    menu-8572: Menu
+  messages:
+    system-messages-6519: 'System Messages'
+  content:
+    system-content-3288: 'Page Content'
+  copyright:
+    copyright-4707: Copyright
+  spacer:
+    spacer-8337: Spacer
+  branding:
+    branding-3391: Branding
+  mobile-menu:
+    mobile-menu-6798: Mobile-menu
+inherit: {  }

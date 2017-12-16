@@ -1,0 +1,49 @@
+version: 2
+preset:
+  image: 'gantry-media://images/admin/layouts/2-col-right.png'
+  name: 2-col-right
+  timestamp: 1513307866
+layout:
+  navigation: {  }
+  header: {  }
+  /container-main/:
+    -
+      -
+        'main 80':
+          -
+            - system-content-1010
+      -
+        'sidebar 20': {  }
+  /footer/:
+    -
+      - 'copyright-1537 40'
+      - 'spacer-3170 30'
+      - 'branding-9538 30'
+  offcanvas:
+    -
+      - mobile-menu-1349
+structure:
+  navigation:
+    type: section
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  header:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+  sidebar:
+    type: section
+    subtype: aside
+    block:
+      fixed: 1
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''

@@ -1,0 +1,51 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/2-col-right.png'
+  name: 2-col-right
+  timestamp: 1513307168
+layout:
+  /container-main/:
+    -
+      -
+        header:
+          -
+            - position-header
+        navigation:
+          -
+            - menu-8572
+        messages:
+          -
+            - system-messages-6519
+        main:
+          -
+            - system-content-3288
+        footer:
+          -
+            - 'copyright-4707 40'
+            - 'spacer-8337 30'
+            - 'branding-3391 30'
+      -
+        aside:
+          -
+            - position-aside
+  offcanvas:
+    -
+      - mobile-menu-6798
+structure:
+  navigation:
+    type: section
+  messages:
+    type: section
+  aside:
+    block:
+      fixed: 1
+  container-main:
+    attributes:
+      boxed: ''
+content:
+  position-header:
+    attributes:
+      key: header
+  position-aside:
+    attributes:
+      key: aside
