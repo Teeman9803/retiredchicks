@@ -54,6 +54,7 @@ structure:
     type: section
     attributes:
       boxed: ''
+      class: ''
   utility:
     type: section
     attributes:

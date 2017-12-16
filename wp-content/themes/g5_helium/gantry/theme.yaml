@@ -59,6 +59,19 @@ configuration:
       400: 'gantry-theme://fonts/lato/lato-regular/lato-regular-webfont'
       200italic: 'gantry-theme://fonts/lato/lato-lightitalic/lato-lightitalic-webfont'
       200: 'gantry-theme://fonts/lato/lato-light/lato-light-webfont'
+    Montserrat:
+      900italic: 'gantry-theme://fonts/montserrat/montserrat-blackitalic/montserrat-blackitalic-webfont'
+      900: 'gantry-theme://fonts/montserrat/montserrat-black/montserrat-black-webfont'
+      700italic: 'gantry-theme://fonts/montserrat/montserrat-bold/montserrat-bolditalic-webfont'
+      700: 'gantry-theme://fonts/montserrat/montserrat-bold/montserrat-bold-webfont'
+      600italic: 'gantry-theme://fonts/montserrat/montserrat-semibolditalic/montserrat-semibolditalic-webfont'
+      600: 'gantry-theme://fonts/montserrat/montserrat-semibold/montserrat-semibold-webfont'
+      500italic: 'gantry-theme://fonts/montserrat/montserrat-mediumitalic/montserrat-mediumitalic-webfont'
+      500: 'gantry-theme://fonts/montserrat/montserrat-medium/montserrat-medium-webfont'
+      400italic: 'gantry-theme://fonts/montserrat/montserrat-italic/montserrat-italic-webfont'
+      400: 'gantry-theme://fonts/montserrat/montserrat-regular/montserrat-regular-webfont'
+      200italic: 'gantry-theme://fonts/montserrat/montserrat-lightitalic/montserrat-lightitalic-webfont'
+      200: 'gantry-theme://fonts/montserrat/montserrat-light/montserrat-light-webfont'
 
   css:
     compiler: \Gantry\Component\Stylesheet\ScssCompiler

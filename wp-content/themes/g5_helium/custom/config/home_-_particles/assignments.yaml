@@ -1,3 +1,7 @@
-context:
-  -
-    is_front_page: true
+context: {  }
+menu: {  }
+language: {  }
+post: {  }
+taxonomy: {  }
+archive: {  }
+woocommerce: {  }
