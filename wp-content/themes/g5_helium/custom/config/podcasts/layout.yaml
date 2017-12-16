@@ -1,51 +1,57 @@
 version: 2
 preset:
-  image: 'gantry-admin://images/layouts/2-col-right.png'
+  image: 'gantry-media://images/admin/layouts/2-col-right.png'
   name: 2-col-right
-  timestamp: 1513307168
+  timestamp: 1513307866
 layout:
+  /navigation/: {  }
+  header: {  }
   /container-main/:
     -
       -
-        header:
-          -
-            - position-header
-        navigation:
-          -
-            - menu-8572
-        messages:
-          -
-            - system-messages-6519
-        main:
-          -
-            - system-content-3288
-        footer:
-          -
-            - 'copyright-4707 40'
-            - 'spacer-8337 30'
-            - 'branding-3391 30'
+        'main 80': {  }
       -
-        aside:
-          -
-            - position-aside
+        'sidebar 20': {  }
+  /footer/:
+    -
+      - 'copyright-4707 40'
+      - 'spacer-8337 30'
+      - 'branding-3391 30'
   offcanvas:
     -
       - mobile-menu-6798
 structure:
   navigation:
     type: section
-  messages:
+    attributes:
+      boxed: ''
+  header:
+    inherit:
+      outline: blog
+      include:
+        - attributes
+        - children
+  main:
+    inherit:
+      outline: blog
+      include:
+        - attributes
+        - block
+        - children
+  sidebar:
     type: section
-  aside:
+    subtype: aside
+    inherit:
+      outline: blog
+      include:
+        - attributes
+        - block
+        - children
     block:
-      fixed: 1
+      fixed: '1'
   container-main:
     attributes:
       boxed: ''
-content:
-  position-header:
+  footer:
     attributes:
-      key: header
-  position-aside:
-    attributes:
-      key: aside
+      boxed: ''

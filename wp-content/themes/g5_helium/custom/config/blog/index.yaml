@@ -1,5 +1,5 @@
 name: blog
-timestamp: 1513403261
+timestamp: 1513429078
 version: 7
 preset:
   image: 'gantry-media://images/admin/layouts/2-col-right.png'
@@ -14,8 +14,15 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  content:
-    system-content-1010: 'Page Content'
+  logo:
+    logo-4799: 'Logo / Image'
+  menu:
+    menu-6098: Menu
+  messages:
+    system-messages-3860: 'System Messages'
+  contentarray:
+    contentarray-4262: 'WordPress Posts'
+    contentarray-5790: 'WordPress Posts'
   copyright:
     copyright-1537: Copyright
   spacer:
@@ -24,19 +31,8 @@ particles:
     branding-9538: Branding
   mobile-menu:
     mobile-menu-1349: Mobile-menu
-  messages:
-    system-messages-2648: 'System Messages'
-  logo:
-    logo-4799: 'Logo / Image'
-  menu:
-    menu-6098: Menu
-  owlcarousel:
-    owlcarousel-6866: 'Owl Carousel'
 inherit:
   default:
-    navigation: navigation
-    header: header
-    system-messages-2648: system-messages-7972
     logo-4799: logo-9608
     menu-6098: menu-6409
-    owlcarousel-6866: owlcarousel-7144
+    system-messages-3860: system-messages-7972

@@ -4,16 +4,23 @@ preset:
   name: 2-col-right
   timestamp: 1513307866
 layout:
-  navigation: {  }
-  header: {  }
+  /navigation/: {  }
+  /header/:
+    -
+      - 'logo-4799 25'
+      - 'menu-6098 75'
+    -
+      - system-messages-3860
   /container-main/:
     -
       -
         'main 80':
           -
-            - system-content-1010
+            - contentarray-4262
       -
-        'sidebar 20': {  }
+        'sidebar 20':
+          -
+            - contentarray-5790
   /footer/:
     -
       - 'copyright-1537 40'
@@ -25,17 +32,13 @@ layout:
 structure:
   navigation:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: ''
+      class: ''
   header:
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: '2'
+      class: ''
   sidebar:
     type: section
     subtype: aside
@@ -47,3 +50,79 @@ structure:
   footer:
     attributes:
       boxed: ''
+content:
+  logo-4799:
+    title: 'Logo / Image'
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: logo-9608
+  menu-6098:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: menu-6409
+  system-messages-3860:
+    inherit:
+      outline: default
+      particle: system-messages-7972
+      include:
+        - attributes
+        - block
+  contentarray-4262:
+    title: 'WordPress Posts'
+    attributes:
+      post:
+        filter:
+          categories: '20'
+          posts: ''
+          sticky: ''
+        limit:
+          total: '6'
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: date
+          ordering: DESC
+        display:
+          image:
+            enabled: show
+          title:
+            enabled: show
+          read_more:
+            enabled: show
+            label: ''
+  contentarray-5790:
+    title: 'WordPress Posts'
+    attributes:
+      post:
+        filter:
+          categories: '1 20'
+          posts: ''
+          sticky: ''
+        limit:
+          total: '10'
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: date
+          ordering: DESC
+        display:
+          image:
+            enabled: ''
+          title:
+            enabled: show
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+          text:
+            type: ''
