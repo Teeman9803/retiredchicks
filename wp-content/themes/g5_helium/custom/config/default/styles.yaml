@@ -1,6 +1,6 @@
 preset: preset6
 base:
-  background: '#363636'
+  background: '#ffffff'
   text-color: '#555555'
 accent:
   color-1: '#660961'

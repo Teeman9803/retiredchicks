@@ -1,5 +1,5 @@
 name: contact
-timestamp: 1513308054
+timestamp: 1513607242
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -7,7 +7,6 @@ preset:
   timestamp: 1513263333
 positions:
   breadcrumbs: Breadcrumbs
-  footer: Footer
 sections:
   navigation: Navigation
   header: Header
@@ -15,23 +14,36 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  messages:
-    system-messages-7972: 'System Messages'
   logo:
-    logo-9608: Logo
+    logo-8835: 'Logo / Image'
+    logo-4694: 'Logo / Image'
   menu:
-    menu-6409: Menu
+    menu-3939: Menu
+    menu-9426: Menu
+  messages:
+    system-messages-6219: 'System Messages'
   position:
     position-breadcrumbs: Breadcrumbs
-    position-footer: Footer
   content:
-    system-content-3503: 'Page Content'
+    system-content-3388: 'Page Content'
   copyright:
-    copyright-6373: Copyright
+    copyright-2935: Copyright
   spacer:
-    spacer-4965: Spacer
-  branding:
-    branding-6158: Branding
+    spacer-1754: Spacer
+  social:
+    social-1046: Social
   mobile-menu:
     mobile-menu-6894: Mobile-menu
-inherit: {  }
+inherit:
+  blog:
+    header: header
+    logo-8835: logo-4799
+    menu-3939: menu-6098
+    system-messages-6219: system-messages-3860
+  default:
+    footer: footer
+    menu-9426: menu-3453
+    logo-4694: logo-9571
+    copyright-2935: copyright-1736
+    spacer-1754: spacer-2556
+    social-1046: social-7256

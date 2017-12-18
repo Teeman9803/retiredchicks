@@ -1,0 +1,41 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: fullpage
+  timestamp: 1513263333
+layout:
+  /navigation/: {  }
+  header: {  }
+  /main/:
+    -
+      - position-breadcrumbs
+    -
+      - system-content-9689
+  footer: {  }
+  offcanvas:
+    -
+      - mobile-menu-8828
+structure:
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+  header:
+    inherit:
+      outline: blog
+      include:
+        - attributes
+        - children
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs

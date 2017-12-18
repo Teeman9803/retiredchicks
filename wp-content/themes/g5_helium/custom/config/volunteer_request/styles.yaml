@@ -1,0 +1,4 @@
+preset: preset6
+base:
+  background: '#ffffff'
+  text-color: '#555555'

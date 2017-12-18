@@ -1,0 +1,49 @@
+name: terms_and_conditions
+timestamp: 1513607899
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: fullpage
+  timestamp: 1513263333
+positions:
+  breadcrumbs: Breadcrumbs
+sections:
+  navigation: Navigation
+  header: Header
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  logo:
+    logo-3311: 'Logo / Image'
+    logo-4808: 'Logo / Image'
+  menu:
+    menu-2572: Menu
+    menu-4466: Menu
+  messages:
+    system-messages-3366: 'System Messages'
+  position:
+    position-breadcrumbs: Breadcrumbs
+  content:
+    system-content-9689: 'Page Content'
+  copyright:
+    copyright-8679: Copyright
+  spacer:
+    spacer-2311: Spacer
+  social:
+    social-1146: Social
+  mobile-menu:
+    mobile-menu-8828: Mobile-menu
+inherit:
+  blog:
+    header: header
+    logo-3311: logo-4799
+    menu-2572: menu-6098
+    system-messages-3366: system-messages-3860
+  default:
+    footer: footer
+    menu-4466: menu-3453
+    logo-4808: logo-9571
+    copyright-8679: copyright-1736
+    spacer-2311: spacer-2556
+    social-1146: social-7256

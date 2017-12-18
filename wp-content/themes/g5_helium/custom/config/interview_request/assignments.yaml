@@ -1,0 +1,9 @@
+context: {  }
+menu: {  }
+language: {  }
+post:
+  page:
+    65: true
+taxonomy: {  }
+archive: {  }
+woocommerce: {  }

@@ -1,37 +1,49 @@
 name: shop
-timestamp: 1513307269
+timestamp: 1513607456
 version: 7
 preset:
-  image: 'gantry-admin://images/layouts/2-col-left.png'
+  image: 'gantry-media://images/admin/layouts/2-col-left.png'
   name: 2-col-left
-  timestamp: 1513307091
-positions:
-  header: Header
-  aside: Aside
+  timestamp: 1513308258
+positions: {  }
 sections:
-  header: Header
   navigation: Navigation
-  messages: Messages
+  header: Header
+  sidebar: Sidebar
   main: Main
   footer: Footer
-  aside: Aside
   offcanvas: Offcanvas
 particles:
-  position:
-    position-header: Header
-    position-aside: Aside
+  logo:
+    logo-7022: 'Logo / Image'
+    logo-5492: 'Logo / Image'
   menu:
-    menu-7702: Menu
+    menu-6190: Menu
+    menu-2627: Menu
   messages:
-    system-messages-4100: 'System Messages'
+    system-messages-8829: 'System Messages'
+  widget:
+    position-widget-4212: Widget
   content:
     system-content-2401: 'Page Content'
   copyright:
-    copyright-8583: Copyright
+    copyright-5627: Copyright
   spacer:
-    spacer-9052: Spacer
-  branding:
-    branding-7460: Branding
+    spacer-6591: Spacer
+  social:
+    social-4357: Social
   mobile-menu:
     mobile-menu-7655: Mobile-menu
-inherit: {  }
+inherit:
+  blog:
+    header: header
+    logo-7022: logo-4799
+    menu-6190: menu-6098
+    system-messages-8829: system-messages-3860
+  default:
+    footer: footer
+    menu-2627: menu-3453
+    logo-5492: logo-9571
+    copyright-5627: copyright-1736
+    spacer-6591: spacer-2556
+    social-4357: social-7256

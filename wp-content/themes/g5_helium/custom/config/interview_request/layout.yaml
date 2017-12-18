@@ -4,25 +4,14 @@ preset:
   name: fullpage
   timestamp: 1513263333
 layout:
-  /navigation/:
-    -
-      - system-messages-7972
-    -
-      - 'logo-9608 15'
-      - 'menu-6409 65'
-  /header/: {  }
+  /navigation/: {  }
+  header: {  }
   /main/:
     -
       - position-breadcrumbs
     -
       - system-content-9974
-  /footer/:
-    -
-      - position-footer
-    -
-      - 'copyright-9444 40'
-      - 'spacer-7274 30'
-      - 'branding-3786 30'
+  footer: {  }
   offcanvas:
     -
       - mobile-menu-4060
@@ -32,18 +21,21 @@ structure:
     attributes:
       boxed: ''
   header:
-    attributes:
-      boxed: ''
+    inherit:
+      outline: blog
+      include:
+        - attributes
+        - children
   main:
     attributes:
       boxed: ''
   footer:
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
 content:
   position-breadcrumbs:
     attributes:
       key: breadcrumbs
-  position-footer:
-    attributes:
-      key: footer

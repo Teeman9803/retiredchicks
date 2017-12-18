@@ -1,0 +1,12 @@
+context: {  }
+menu: {  }
+language: {  }
+post:
+  page:
+    19: true
+taxonomy: {  }
+archive: {  }
+woocommerce:
+  -
+    is_shop: true
+    is_product: true

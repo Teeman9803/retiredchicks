@@ -1,51 +1,52 @@
 version: 2
 preset:
-  image: 'gantry-admin://images/layouts/2-col-left.png'
+  image: 'gantry-media://images/admin/layouts/2-col-left.png'
   name: 2-col-left
-  timestamp: 1513307091
+  timestamp: 1513308258
 layout:
+  /navigation/: {  }
+  header: {  }
   /container-main/:
     -
       -
-        header:
+        'sidebar 20':
           -
-            - position-header
-        navigation:
-          -
-            - menu-7702
-        messages:
-          -
-            - system-messages-4100
-        main:
+            - position-widget-4212
+      -
+        'main 80':
           -
             - system-content-2401
-        footer:
-          -
-            - 'copyright-8583 40'
-            - 'spacer-9052 30'
-            - 'branding-7460 30'
-      -
-        aside:
-          -
-            - position-aside
+  footer: {  }
   offcanvas:
     -
       - mobile-menu-7655
 structure:
   navigation:
     type: section
-  messages:
+    attributes:
+      boxed: ''
+  header:
+    inherit:
+      outline: blog
+      include:
+        - attributes
+        - children
+  sidebar:
     type: section
-  aside:
+    subtype: aside
     block:
       fixed: 1
   container-main:
     attributes:
       boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
 content:
-  position-header:
+  position-widget-4212:
     attributes:
-      key: header
-  position-aside:
-    attributes:
-      key: aside
+      widget: '{"type":"widget","widget":"woof_widget","title":"WOOF - WooCommerce Products Filter","options":{"widget":{"title":"WooCommerce Products Filter","additional_text_before":"","redirect":"","woof_start_filtering_btn":"0","ajax_redraw":"0"}}}'
+      key: widget
