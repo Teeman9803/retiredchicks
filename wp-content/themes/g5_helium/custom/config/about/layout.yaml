@@ -4,10 +4,15 @@ preset:
   name: default
   timestamp: 1513089165
 layout:
-  navigation: {  }
-  /header/:
+  /navigation/:
     -
-      - logo-1334
+      - system-messages-2770
+    -
+      - 'logo-5067 25'
+      - 'menu-3355 75'
+    -
+      - custom-6122
+  /header/: {  }
   /intro/:
     -
       - logo-5980
@@ -44,11 +49,9 @@ layout:
 structure:
   navigation:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: ''
+      class: ''
   header:
     attributes:
       boxed: ''
@@ -57,10 +60,12 @@ structure:
     type: section
     attributes:
       boxed: ''
+      class: 'slab-center intro'
   features:
     type: section
     attributes:
       boxed: ''
+      class: slab-center
   utility:
     type: section
     attributes:
@@ -74,6 +79,7 @@ structure:
     type: section
     attributes:
       boxed: ''
+      class: slab-left
   expanded:
     type: section
     attributes:
@@ -106,29 +112,33 @@ structure:
     attributes:
       boxed: ''
 content:
-  logo-1334:
+  logo-5067:
     title: 'Logo / Image'
     attributes:
       url: ''
       target: _self
-      image: ''
-      link: '0'
+      image: 'gantry-media://2017/12/rc_logo.png'
+      link: '1'
       svg: ''
-      text: ''
-      class: ''
+  menu-3355:
+    attributes:
+      menu: mainmenu
+      base: /
+  custom-6122:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"tagline\">\n   <div class=\"tag\">About</div>\n   <h1>The RC Brand</h1>\n</div>"
   logo-5980:
     title: 'Logo / Image'
     attributes:
-      url: ''
-      image: 'gantry-media://2017/12/pexels-photo-235516.jpeg'
+      image: ''
       link: '0'
       svg: ''
-      text: ''
-      class: ''
+      class: avatar-md
   custom-3566:
     title: 'Custom HTML'
     attributes:
-      html: "<div>\n<div>The CEO</div>\n<h3>Tamara McCutcheon</h3>\n<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>\n</div>"
+      html: "<div>\n<div class=\"tag\">The CEO</div>\n<h2 class=\"title\">Tamara McCutcheon</h2>\n<q class=\"body\">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</q>\n</div>"
       twig: '0'
       filter: '0'
   contentarray-7489:
@@ -148,7 +158,7 @@ content:
           ordering: ASC
         display:
           image:
-            enabled: show
+            enabled: ''
           title:
             enabled: show
           date:
@@ -166,9 +176,30 @@ content:
   custom-9016:
     title: 'Custom HTML'
     attributes:
-      html: "<div>\n<div>Our Sponsors</div>\n<p>Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>\n</div>"
+      html: "<div class=\"slab\">\n<h2 class=\"title\">Our Partners</h2>\n<p class=\"body\">Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>\n</div>"
       twig: '0'
       filter: '0'
+  social-2204:
+    attributes:
+      css:
+        class: ''
+      display: icons_only
+      items:
+        -
+          icon: 'fa fa-twitter fa-fw fa-5x'
+          text: ''
+          link: 'http://www.twitter.com/rockettheme'
+          name: Twitter
+        -
+          icon: 'fa fa-facebook fa-fw fa-5x'
+          text: ''
+          link: 'http://www.facebook.com/RocketTheme'
+          name: Facebook
+        -
+          icon: 'fa fa-google-plus fa-fw fa-5x'
+          text: ''
+          link: 'https://plus.google.com/+rockettheme'
+          name: Google+
   custom-2018:
     title: 'Custom HTML'
     attributes:

@@ -1,5 +1,5 @@
 name: shop
-timestamp: 1513607456
+timestamp: 1514887313
 version: 7
 preset:
   image: 'gantry-media://images/admin/layouts/2-col-left.png'
@@ -14,14 +14,14 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
+  messages:
+    system-messages-8829: 'System Messages'
   logo:
     logo-7022: 'Logo / Image'
     logo-5492: 'Logo / Image'
   menu:
     menu-6190: Menu
     menu-2627: Menu
-  messages:
-    system-messages-8829: 'System Messages'
   widget:
     position-widget-4212: Widget
   content:
@@ -35,11 +35,6 @@ particles:
   mobile-menu:
     mobile-menu-7655: Mobile-menu
 inherit:
-  blog:
-    header: header
-    logo-7022: logo-4799
-    menu-6190: menu-6098
-    system-messages-8829: system-messages-3860
   default:
     footer: footer
     menu-2627: menu-3453

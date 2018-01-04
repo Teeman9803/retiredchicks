@@ -1,5 +1,5 @@
 name: podcasts
-timestamp: 1513429960
+timestamp: 1514028851
 version: 7
 preset:
   image: 'gantry-media://images/admin/layouts/2-col-right.png'
@@ -15,14 +15,13 @@ sections:
   offcanvas: Offcanvas
 particles:
   logo:
-    logo-5428: 'Logo / Image'
+    logo-5544: 'Logo / Image'
   menu:
-    menu-1936: Menu
+    menu-7413: Menu
   messages:
-    system-messages-4663: 'System Messages'
-  contentarray:
-    contentarray-9389: 'WordPress Posts'
-    contentarray-2066: 'WordPress Posts'
+    system-messages-3503: 'System Messages'
+  content:
+    system-content-1440: 'Page Content'
   copyright:
     copyright-4707: Copyright
   spacer:
@@ -31,13 +30,4 @@ particles:
     branding-3391: Branding
   mobile-menu:
     mobile-menu-6798: Mobile-menu
-inherit:
-  blog:
-    header: header
-    logo-5428: logo-4799
-    menu-1936: menu-6098
-    system-messages-4663: system-messages-3860
-    main: main
-    contentarray-9389: contentarray-4262
-    sidebar: sidebar
-    contentarray-2066: contentarray-5790
+inherit: {  }

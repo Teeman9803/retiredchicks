@@ -1,3 +1,6 @@
 preset: preset6
 base:
   background: '#ffffff'
+header:
+  background-image: 'gantry-media://2017/12/pexels-photo-247287.jpeg'
+  background-overlay: enabled

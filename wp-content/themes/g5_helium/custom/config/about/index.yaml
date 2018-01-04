@@ -1,5 +1,5 @@
 name: about
-timestamp: 1513407253
+timestamp: 1515072045
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -22,17 +22,17 @@ sections:
   offcanvas: Offcanvas
 particles:
   messages:
-    system-messages-9524: 'System Messages'
+    system-messages-2770: 'System Messages'
   logo:
-    logo-8690: 'Logo / Image'
-    logo-1334: 'Logo / Image'
+    logo-5067: 'Logo / Image'
     logo-5980: 'Logo / Image'
     logo-2980: 'Logo / Image'
   menu:
-    menu-1276: Menu
+    menu-3355: Menu
     menu-9529: Menu
     menu-6699: Menu
   custom:
+    custom-6122: 'Custom HTML'
     custom-3566: 'Custom HTML'
     custom-9016: 'Custom HTML'
     custom-2018: 'Custom HTML'
@@ -50,10 +50,6 @@ particles:
     mobile-menu-6875: Mobile-menu
 inherit:
   default:
-    navigation: navigation
-    system-messages-9524: system-messages-7972
-    logo-8690: logo-9608
-    menu-1276: menu-6409
     footer: footer
     menu-6699: menu-3453
     logo-2980: logo-9571

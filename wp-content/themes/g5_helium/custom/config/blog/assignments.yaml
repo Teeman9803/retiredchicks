@@ -4,7 +4,6 @@ language: {  }
 post:
   page:
     25: true
-    22: true
     28: true
 taxonomy: {  }
 archive: {  }

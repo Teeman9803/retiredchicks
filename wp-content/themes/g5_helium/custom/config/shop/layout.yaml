@@ -5,7 +5,12 @@ preset:
   timestamp: 1513308258
 layout:
   /navigation/: {  }
-  header: {  }
+  /header/:
+    -
+      - system-messages-8829
+    -
+      - 'logo-7022 25'
+      - 'menu-6190 75'
   /container-main/:
     -
       -
@@ -26,11 +31,9 @@ structure:
     attributes:
       boxed: ''
   header:
-    inherit:
-      outline: blog
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: '0'
+      class: ''
   sidebar:
     type: section
     subtype: aside
@@ -46,6 +49,22 @@ structure:
         - attributes
         - children
 content:
+  logo-7022:
+    title: 'Logo / Image'
+    attributes:
+      url: ''
+      target: _self
+      image: 'gantry-media://2017/12/rc_logo.png'
+      link: '1'
+      svg: ''
+      text: ''
+      class: ''
+  menu-6190:
+    attributes:
+      menu: mainmenu
+      base: /
+      hoverExpand: '1'
+      mobileTarget: '0'
   position-widget-4212:
     attributes:
       widget: '{"type":"widget","widget":"woof_widget","title":"WOOF - WooCommerce Products Filter","options":{"widget":{"title":"WooCommerce Products Filter","additional_text_before":"","redirect":"","woof_start_filtering_btn":"0","ajax_redraw":"0"}}}'

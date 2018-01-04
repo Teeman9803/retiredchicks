@@ -5,11 +5,18 @@ preset:
   timestamp: 1513307866
 layout:
   /navigation/: {  }
-  header: {  }
+  /header/:
+    -
+      - 'logo-5544 25'
+      - 'menu-7413 75'
+    -
+      - system-messages-3503
   /container-main/:
     -
       -
-        'main 80': {  }
+        'main 80':
+          -
+            - system-content-1440
       -
         'sidebar 20': {  }
   /footer/:
@@ -26,27 +33,14 @@ structure:
     attributes:
       boxed: ''
   header:
-    inherit:
-      outline: blog
-      include:
-        - attributes
-        - children
-  main:
-    inherit:
-      outline: blog
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      boxed: ''
+      class: ''
   sidebar:
     type: section
     subtype: aside
-    inherit:
-      outline: blog
-      include:
-        - attributes
-        - block
-        - children
+    attributes:
+      class: ''
     block:
       fixed: '1'
   container-main:
@@ -55,3 +49,20 @@ structure:
   footer:
     attributes:
       boxed: ''
+content:
+  logo-5544:
+    title: 'Logo / Image'
+    attributes:
+      url: ''
+      target: _self
+      image: 'gantry-media://2017/12/rc_logo.png'
+      link: '1'
+      svg: ''
+      text: ''
+      class: ''
+  menu-7413:
+    attributes:
+      menu: mainmenu
+      base: /
+      hoverExpand: '1'
+      mobileTarget: '0'

@@ -1,2 +1,10 @@
 @import "dependencies";
+@import "variables";
+@import "core";
+@import "mixins";
+@import "carousel";
+@import "nav";
+@import "badges";
+@import "about";
 @include import-font('montserrat');
+
