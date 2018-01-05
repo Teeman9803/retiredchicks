@@ -1,0 +1,18 @@
+
+@mixin tag($font-size, $background: transparent) {
+  padding: .25rem 1.5rem;
+  display: inline;
+  background: $background;
+  border-radius: 100px;
+  font-weight: 600;
+  font-size: $font-size;
+  text-transform: uppercase;
+}
+
+@mixin avatar($image) {
+  background-image: url($image);
+  background-size: cover;
+  background-position: top center;
+  border-radius: 50%;
+  margin: 0 auto;
+}

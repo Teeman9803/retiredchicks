@@ -1,0 +1,8 @@
+/*** Carousel ***/
+
+.g-owlcarousel.has-color-overlay .owl-stage > .owl-item {
+  &:nth-child(odd) .g-owlcarousel-item-img:after, &:nth-child(even) .g-owlcarousel-item-img:after {
+    background-image: none;
+    background-color: #1a1a1a;
+  }
+}

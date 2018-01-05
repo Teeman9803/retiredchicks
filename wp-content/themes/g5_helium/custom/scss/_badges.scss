@@ -1,0 +1,6 @@
+.tag {
+  .intro & {
+    @include tag(.85rem);
+  }
+  @include tag(.85rem, #683393);
+}

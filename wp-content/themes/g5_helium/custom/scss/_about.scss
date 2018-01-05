@@ -1,0 +1,25 @@
+.avatar-md {
+  @include avatar('http://localhost:8888/retiredchicks/wp-content/themes/g5_helium/custom/images/2017/12/pexels-photo-235516.jpeg');
+  height: 11.25rem;
+  width: 11.25rem;
+}
+
+.intro {
+  .title {
+    font-weight: 600;
+    margin: 0;
+    color: $base-font-color;
+  }
+  .body {
+    width: 58.25rem;
+    margin: 0 auto;
+    font-weight: 600;
+    display: block;
+    font-style: italic;
+  }
+  .g-wordpress-posts .g-array-item {
+    width: 12.5rem;
+    margin: 0 auto;
+  }
+}
+

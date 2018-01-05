@@ -1,0 +1,23 @@
+body {
+  font-size: $base-font-size;
+  color: $base-font-color;
+  font-weight: $base-font-weight;
+}
+
+/** Content Slabs **/
+
+@each $position in $positions {
+  .slab-#{nth($position, 1)} {
+    text-align: nth($position, 2);
+    .title {
+      font-weight: 600;
+    }
+  }
+}
+
+[class*="slab-"] {
+  .g-content {
+    padding: 0;
+  }
+}
+
