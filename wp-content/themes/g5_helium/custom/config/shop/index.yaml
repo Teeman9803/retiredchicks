@@ -1,5 +1,5 @@
 name: shop
-timestamp: 1515865048
+timestamp: 1515932401
 version: 7
 preset:
   image: 'gantry-media://images/admin/layouts/2-col-left.png'
@@ -31,14 +31,14 @@ particles:
     position-widget-8211: Widget
   content:
     system-content-2401: 'Page Content'
+  mobile-menu:
+    mobile-menu-7655: Mobile-menu
   copyright:
     copyright-5627: Copyright
   spacer:
     spacer-6591: Spacer
   social:
     social-4357: Social
-  mobile-menu:
-    mobile-menu-7655: Mobile-menu
 inherit:
   about:
     navigation: navigation
