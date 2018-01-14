@@ -1,1 +1,4 @@
 preset: preset6
+footer:
+  background: '#2a2a2a'
+  text-color: '#ffffff'

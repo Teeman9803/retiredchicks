@@ -1,5 +1,5 @@
 name: volunteer_request
-timestamp: 1513607295
+timestamp: 1515635381
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -14,34 +14,33 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-5208: 'Logo / Image'
-    logo-8764: 'Logo / Image'
-  menu:
-    menu-3972: Menu
-    menu-6578: Menu
-  messages:
-    system-messages-7756: 'System Messages'
   position:
     position-breadcrumbs: Breadcrumbs
   content:
     system-content-3737: 'Page Content'
+  mobile-menu:
+    mobile-menu-8826: Mobile-menu
+  menu:
+    menu-3991: Menu
+    menu-2958: Menu
+    menu-5854: Menu
+    menu-6578: Menu
+  logo:
+    logo-8764: 'Logo / Image'
   copyright:
     copyright-2700: Copyright
   spacer:
     spacer-2702: Spacer
   social:
     social-3056: Social
-  mobile-menu:
-    mobile-menu-8826: Mobile-menu
 inherit:
   blog:
     header: header
-    logo-5208: logo-4799
-    menu-3972: menu-6098
-    system-messages-7756: system-messages-3860
   default:
     footer: footer
+    menu-3991: menu-1837
+    menu-2958: menu-6570
+    menu-5854: menu-9412
     menu-6578: menu-3453
     logo-8764: logo-9571
     copyright-2700: copyright-1736

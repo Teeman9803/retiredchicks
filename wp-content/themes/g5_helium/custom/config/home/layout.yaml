@@ -4,10 +4,17 @@ preset:
   name: home_-_particles
   timestamp: 1513089165
 layout:
-  navigation: {  }
-  /header/:
+  /navigation/:
+    -
+      - system-messages-2784
     -
       - owlcarousel-4206
+    -
+      - 'logo-1433 25'
+      - 'menu-1081 75'
+    -
+      - custom-2768
+  /header/: {  }
   /intro/: {  }
   /features/: {  }
   /utility/: {  }
@@ -19,7 +26,7 @@ layout:
       -
         'mainbar 75':
           -
-            - contentcubes-7157
+            - system-content-1451
       -
         'sidebar 25': {  }
   footer: {  }
@@ -27,11 +34,9 @@ layout:
 structure:
   navigation:
     type: section
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: ''
+      class: ''
   header:
     attributes:
       boxed: '2'
@@ -72,7 +77,7 @@ structure:
       boxed: ''
   footer:
     inherit:
-      outline: default
+      outline: about
       include:
         - attributes
         - children
@@ -83,6 +88,13 @@ structure:
         - attributes
         - children
 content:
+  system-messages-2784:
+    inherit:
+      outline: about
+      particle: system-messages-2770
+      include:
+        - attributes
+        - block
   owlcarousel-4206:
     title: 'Owl Carousel'
     attributes:
@@ -107,71 +119,26 @@ content:
           linktext: 'Listen Now'
           buttonclass: button-outline
           name: Podcasts
-  contentcubes-7157:
-    title: 'Content Cubes'
-    attributes:
-      title: ''
-      items:
-        -
-          image: 'gantry-media://2017/12/pexels-photo-227288.jpeg'
-          imageposition: left
-          label: Shop
-          title: 'The New Fall Collection is Here'
-          link: shop
-          linktext: 'Shop New Arrivals'
-          desc: 'Nulla quis lorem ut libero malesuada feugiat. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla porttitor accumsan tincidunt. Donec sollicitudin molestie malesuada. '
-          buttonclass: button-outline
-          buttontarget: _self
-          name: 'New Arrivals'
-        -
-          image: 'gantry-media://2017/12/pexels-photo-196666-768x512.jpeg'
-          imageposition: left
-          label: 'About Us'
-          title: 'Experience the RC Brand'
-          link: about
-          linktext: 'Who We Are'
-          desc: ''
-          buttonclass: button-outline
-          buttontarget: _self
-          name: 'The Brand'
-        -
-          image: 'gantry-media://2017/12/pexels-photo-196666-768x512.jpeg'
-          imageposition: left
-          label: Initiatives
-          title: 'RC E-Mentoring'
-          link: initiatives
-          linktext: 'View All'
-          desc: ''
-          buttonclass: button-outline
-          buttontarget: _self
-          name: Initiative
-        -
-          image: 'gantry-media://2017/12/pexels-photo-607894-1024x793.jpeg'
-          imageposition: left
-          label: Blog
-          title: 'RC of the Month'
-          link: blog
-          linktext: 'Read Now'
-          desc: 'Cras ultricies ligula sed magna dictum porta. Donec rutrum congue leo eget malesuada. Sed porttitor lectus nibh. Sed porttitor lectus nibh. Pellentesque in ipsum id orci porta dapibus. Curabitur aliquet quam id dui posuere blandit. Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.'
-          buttonclass: button-outline
-          buttontarget: _self
-          name: Blog
-        -
-          image: ''
-          video: 'gantry-media://2017/12/343647377.mp4'
-          imageposition: left
-          label: ''
-          title: 'Visit the Beach'
-          tags: {  }
-          link: ''
-          linktext: ''
-          desc: ''
-          buttonclass: ''
-          buttontarget: _self
-          name: 'Blog Video'
-        -
-          name: Facebook
-        -
-          name: Twitter
-        -
-          name: Subscribe
+  logo-1433:
+    title: 'Logo / Image'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: logo-5067
+  menu-1081:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-3355
+  custom-2768:
+    title: 'Custom HTML'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: custom-6122

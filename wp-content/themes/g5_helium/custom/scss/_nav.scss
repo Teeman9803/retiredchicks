@@ -58,7 +58,71 @@
 
 .fa.fa-shopping-cart {
   .g-menu-item-container & {
-    margin-left: 12rem;
+    margin-left: 15rem;
   }
 }
 
+.widget {
+  @include nav-vertical(transparent, $light-gray)
+}
+
+.initiatives-section {
+  .menu.menu-vertical {
+    margin-top: 0.938rem;
+    @include nav-vertical($base-color);
+    li {
+      &:hover,
+      &.active {
+        background-color: #fff;
+        &:after {
+          content: '\25ba';
+          position: absolute;
+          right: -12px;
+          top: 6px;
+          color: #fff;
+        }
+      }
+      &:hover {
+        a > span {
+          color: $base-color;
+        }
+      }
+      &.active a > span {
+        color: $base-color;
+      }
+      padding: .25rem 1rem;
+      a {
+        > span {
+          font-weight: 600;
+          font-size: .70rem;
+          text-transform: uppercase;
+        }
+        color: #fff !important;
+      }
+    }
+
+    nav {
+      width: 15rem;
+    }
+    > div[id*='menu-'] {
+      margin: 0;
+    }
+  }
+}
+
+footer {
+  .menu.menu-vertical {
+    @include nav-vertical;
+    li a > span {
+      font-size: .9rem;
+      font-weight: 500;
+      color: $med-gray;
+    }
+    li a:hover {
+      color: $light-gray;
+    }
+  }
+  div {
+    color: $med-gray;
+  }
+}

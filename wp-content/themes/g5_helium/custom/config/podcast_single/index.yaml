@@ -1,0 +1,58 @@
+name: podcast_single
+timestamp: 1515767814
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: fullpage
+  timestamp: 1513263333
+positions:
+  breadcrumbs: Breadcrumbs
+sections:
+  navigation: Navigation
+  header: Header
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  position:
+    position-breadcrumbs: Breadcrumbs
+  content:
+    system-content-5616: 'Page Content'
+  mobile-menu:
+    mobile-menu-2071: Mobile-menu
+  messages:
+    system-messages-8549: 'System Messages'
+  logo:
+    logo-9875: 'Logo / Image'
+    logo-4513: 'Logo / Image'
+  menu:
+    menu-3520: Menu
+    menu-2714: Menu
+    menu-6645: Menu
+    menu-7561: Menu
+    menu-1052: Menu
+  custom:
+    custom-8716: 'Custom HTML'
+  copyright:
+    copyright-5657: Copyright
+  spacer:
+    spacer-4808: Spacer
+  social:
+    social-6241: Social
+inherit:
+  about:
+    navigation: navigation
+    system-messages-8549: system-messages-2770
+    logo-9875: logo-5067
+    menu-3520: menu-3355
+    custom-8716: custom-6122
+  default:
+    footer: footer
+    menu-2714: menu-1837
+    menu-6645: menu-6570
+    menu-7561: menu-9412
+    menu-1052: menu-3453
+    logo-4513: logo-9571
+    copyright-5657: copyright-1736
+    spacer-4808: spacer-2556
+    social-6241: social-7256

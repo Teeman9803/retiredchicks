@@ -1,4 +1,6 @@
-context: {  }
+context:
+  -
+    is_woocommerce: true
 menu: {  }
 language: {  }
 post:

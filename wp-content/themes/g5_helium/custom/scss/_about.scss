@@ -4,22 +4,72 @@
   width: 11.25rem;
 }
 
-.intro {
-  .title {
-    font-weight: 600;
-    margin: 0;
-    color: $base-font-color;
-  }
+.about-section {
   .body {
-    width: 58.25rem;
     margin: 0 auto;
     font-weight: 600;
     display: block;
     font-style: italic;
+    max-width: 51rem;
   }
   .g-wordpress-posts .g-array-item {
-    width: 12.5rem;
     margin: 0 auto;
+    padding: 2rem;
+    .title a {
+      font-weight: 600;
+      margin: 0;
+      color: $base-font-color;
+    }
+  }
+  [class*='wp-svg-'] {
+    display: block;
+    padding: 0 0px 30px;
+    @include icon(82px, purple);
+  }
+}
+
+.about-features {
+  margin: 3rem 0 0;
+  .flex-item {
+    margin: 0 2.5rem;
+    i[class*=fa] {
+      color: $base-color;
+    }
+    p {
+      margin: .25rem 0;
+    }
+  }
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+
+}
+
+.partners-section .body {
+  max-width: 51rem;
+  margin: 1rem auto 2rem;
+}
+
+#g-testimonials {
+  background-position: center center;
+  &:before {
+    background-image: none;
+    background-color: #1a1a1a;
+  }
+}
+
+.initiative {
+  width: 45rem;
+  [class*='-title'] {
+    text-align: initial;
+    font-size: initial;
+    text-transform: initial;
+    > a {
+      color: #fff !important;
+      font-weight: 600;
+    }
   }
 }
 

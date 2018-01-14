@@ -1,0 +1,45 @@
+name: Feature Post
+description: Display feature post.
+type: particle
+icon: fa-cube
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true
+
+    css.class:
+      type: input.text
+      label: CSS Classes
+      description: CSS class name for the particle.
+
+    items:
+          type: collection.list
+          array: true
+          label: Content Items
+          description: Create each item to display.
+          value: name
+          ajax: true
+          fields:
+            title:
+              type: input.text
+              label: Title
+              description: Customize the title text.
+              placeholder: Enter title
+
+            icon:
+              type: input.icon
+              label: Icon
+              description: Select an icon you would like to use.
+
+            post:
+              type: input.text
+              label: Text/HTML
+              description: Add text.

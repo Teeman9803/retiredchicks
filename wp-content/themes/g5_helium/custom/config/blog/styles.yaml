@@ -1,0 +1,9 @@
+preset: preset6
+navigation:
+  background-image: 'gantry-media://header/pexels-photo-242829.jpeg'
+  background-overlay: enabled
+header:
+  background: '#474747'
+  background-overlay: enabled
+footer:
+  background: '#2a2a2a'

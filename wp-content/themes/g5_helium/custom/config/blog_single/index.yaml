@@ -1,0 +1,56 @@
+name: blog_single
+timestamp: 1515767814
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: fullpage
+  timestamp: 1513263333
+positions:
+  breadcrumbs: Breadcrumbs
+sections:
+  navigation: Navigation
+  header: Header
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-1343: 'System Messages'
+  logo:
+    logo-3322: 'Logo / Image'
+    logo-7399: 'Logo / Image'
+  menu:
+    menu-3133: Menu
+    menu-9151: Menu
+    menu-8736: Menu
+    menu-6832: Menu
+    menu-5615: Menu
+  custom:
+    custom-1705: 'Custom HTML'
+  position:
+    position-breadcrumbs: Breadcrumbs
+  content:
+    system-content-5815: 'Page Content'
+  mobile-menu:
+    mobile-menu-9910: Mobile-menu
+  copyright:
+    copyright-5318: Copyright
+  spacer:
+    spacer-2067: Spacer
+  social:
+    social-1948: Social
+inherit:
+  about:
+    system-messages-1343: system-messages-2770
+    logo-3322: logo-5067
+    menu-3133: menu-3355
+  default:
+    footer: footer
+    menu-9151: menu-1837
+    menu-8736: menu-6570
+    menu-6832: menu-9412
+    menu-5615: menu-3453
+    logo-7399: logo-9571
+    copyright-5318: copyright-1736
+    spacer-2067: spacer-2556
+    social-1948: social-7256

@@ -9,9 +9,6 @@ body {
 @each $position in $positions {
   .slab-#{nth($position, 1)} {
     text-align: nth($position, 2);
-    .title {
-      font-weight: 600;
-    }
   }
 }
 
@@ -19,5 +16,50 @@ body {
   .g-content {
     padding: 0;
   }
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
 }
 
+
+/** Flex Rows */
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/** Feature Posts **/
+.feature-large {
+  .post-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $light-gray;
+    height: 100%;
+    width: 36rem;
+    color: $base-font-color;
+
+  }
+  .thumbnail-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 15rem -2.8rem;
+  }
+  .title, .title a {
+    color: inherit;
+    width: 30rem;
+    line-height: 1.1;
+    font-weight: 800;
+    font-size: 2.8rem;
+  }
+  .date {
+    color: $base-font-color;
+  }
+  .tag {
+    color: $base-color;
+  }
+}

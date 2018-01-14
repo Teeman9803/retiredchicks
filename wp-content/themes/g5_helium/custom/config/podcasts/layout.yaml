@@ -4,13 +4,15 @@ preset:
   name: 2-col-right
   timestamp: 1513307866
 layout:
-  /navigation/: {  }
-  /header/:
+  /navigation/:
     -
-      - 'logo-5544 25'
-      - 'menu-7413 75'
+      - system-messages-2222
     -
-      - system-messages-3503
+      - 'logo-6127 30'
+      - 'menu-7613 70'
+    -
+      - custom-9174
+  /header/: {  }
   /container-main/:
     -
       -
@@ -19,11 +21,7 @@ layout:
             - system-content-1440
       -
         'sidebar 20': {  }
-  /footer/:
-    -
-      - 'copyright-4707 40'
-      - 'spacer-8337 30'
-      - 'branding-3391 30'
+  footer: {  }
   offcanvas:
     -
       - mobile-menu-6798
@@ -32,10 +30,14 @@ structure:
     type: section
     attributes:
       boxed: ''
+      class: ''
   header:
     attributes:
       boxed: ''
       class: ''
+  main:
+    attributes:
+      class: podcast-section
   sidebar:
     type: section
     subtype: aside
@@ -47,22 +49,35 @@ structure:
     attributes:
       boxed: ''
   footer:
-    attributes:
-      boxed: ''
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - children
 content:
-  logo-5544:
+  system-messages-2222:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: system-messages-2770
+  logo-6127:
     title: 'Logo / Image'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: logo-5067
+  menu-7613:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-3355
+  custom-9174:
+    title: 'Custom HTML'
     attributes:
-      url: ''
-      target: _self
-      image: 'gantry-media://2017/12/rc_logo.png'
-      link: '1'
-      svg: ''
-      text: ''
-      class: ''
-  menu-7413:
-    attributes:
-      menu: mainmenu
-      base: /
-      hoverExpand: '1'
-      mobileTarget: '0'
+      html: "<div class=\"tagline\">\n   <div class=\"tag\">Podcast</div>\n   <h1>Listen Now</h1>\n</div>"

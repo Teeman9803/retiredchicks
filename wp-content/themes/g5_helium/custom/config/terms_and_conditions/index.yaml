@@ -1,5 +1,5 @@
 name: terms_and_conditions
-timestamp: 1513607899
+timestamp: 1515635381
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -14,34 +14,33 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-3311: 'Logo / Image'
-    logo-4808: 'Logo / Image'
-  menu:
-    menu-2572: Menu
-    menu-4466: Menu
-  messages:
-    system-messages-3366: 'System Messages'
   position:
     position-breadcrumbs: Breadcrumbs
   content:
     system-content-9689: 'Page Content'
+  mobile-menu:
+    mobile-menu-8828: Mobile-menu
+  menu:
+    menu-2551: Menu
+    menu-9659: Menu
+    menu-5954: Menu
+    menu-4466: Menu
+  logo:
+    logo-4808: 'Logo / Image'
   copyright:
     copyright-8679: Copyright
   spacer:
     spacer-2311: Spacer
   social:
     social-1146: Social
-  mobile-menu:
-    mobile-menu-8828: Mobile-menu
 inherit:
   blog:
     header: header
-    logo-3311: logo-4799
-    menu-2572: menu-6098
-    system-messages-3366: system-messages-3860
   default:
     footer: footer
+    menu-2551: menu-1837
+    menu-9659: menu-6570
+    menu-5954: menu-9412
     menu-4466: menu-3453
     logo-4808: logo-9571
     copyright-8679: copyright-1736

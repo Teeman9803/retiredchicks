@@ -4,19 +4,21 @@ preset:
   name: 2-col-left
   timestamp: 1513308258
 layout:
-  /navigation/: {  }
-  /header/:
+  navigation:
     -
-      - system-messages-8829
+      - system-messages-8435
     -
-      - 'logo-7022 25'
-      - 'menu-6190 75'
+      - 'logo-3375 30'
+      - 'menu-6896 70'
+    -
+      - custom-8780
+  /header/: {  }
   /container-main/:
     -
       -
         'sidebar 20':
           -
-            - position-widget-4212
+            - position-widget-8211
       -
         'main 80':
           -
@@ -28,8 +30,10 @@ layout:
 structure:
   navigation:
     type: section
-    attributes:
-      boxed: ''
+    inherit:
+      outline: about
+      include:
+        - attributes
   header:
     attributes:
       boxed: '0'
@@ -42,6 +46,8 @@ structure:
   container-main:
     attributes:
       boxed: ''
+      class: shop-section
+      extra: {  }
   footer:
     inherit:
       outline: default
@@ -49,23 +55,33 @@ structure:
         - attributes
         - children
 content:
-  logo-7022:
+  system-messages-8435:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: system-messages-2770
+  logo-3375:
     title: 'Logo / Image'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: logo-5067
+  menu-6896:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-3355
+  custom-8780:
+    title: 'Custom HTML'
     attributes:
-      url: ''
-      target: _self
-      image: 'gantry-media://2017/12/rc_logo.png'
-      link: '1'
-      svg: ''
-      text: ''
-      class: ''
-  menu-6190:
+      html: "<div class=\"tagline\">\n   <div class=\"tag\">Shop</div>\n   <h1>Get RC Gear</h1>\n</div>"
+  position-widget-8211:
     attributes:
-      menu: mainmenu
-      base: /
-      hoverExpand: '1'
-      mobileTarget: '0'
-  position-widget-4212:
-    attributes:
-      widget: '{"type":"widget","widget":"woof_widget","title":"WOOF - WooCommerce Products Filter","options":{"widget":{"title":"WooCommerce Products Filter","additional_text_before":"","redirect":"","woof_start_filtering_btn":"0","ajax_redraw":"0"}}}'
-      key: widget
+      enabled: 0
+      widget: '{"type":"widget","widget":"woof_widget","title":"WOOF - WooCommerce Products Filter","options":{"widget":{"title":"","additional_text_before":"","redirect":"","woof_start_filtering_btn":"0","ajax_redraw":"0"}}}'

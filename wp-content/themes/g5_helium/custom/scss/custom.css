@@ -6,8 +6,8 @@ Error: File to import not found or unreadable: dependencies.
 2: @import "variables";
 3: @import "core";
 4: @import "mixins";
-5: @import "carousel";
-6: @import "nav";
+5: @import "buttons";
+6: @import "carousel";
 
 Backtrace:
 custom.scss:1
@@ -53,4 +53,4 @@ custom.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: dependencies.\A         on line 1 of custom.scss\A \A 1: @import \"dependencies\";\A 2: @import \"variables\";\A 3: @import \"core\";\A 4: @import \"mixins\";\A 5: @import \"carousel\";\A 6: @import \"nav\";"; }
+  content: "Error: File to import not found or unreadable: dependencies.\A         on line 1 of custom.scss\A \A 1: @import \"dependencies\";\A 2: @import \"variables\";\A 3: @import \"core\";\A 4: @import \"mixins\";\A 5: @import \"buttons\";\A 6: @import \"carousel\";"; }

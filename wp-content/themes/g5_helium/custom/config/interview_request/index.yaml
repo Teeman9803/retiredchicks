@@ -1,5 +1,5 @@
 name: interview_request
-timestamp: 1513607262
+timestamp: 1515635381
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -14,34 +14,33 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-3958: 'Logo / Image'
-    logo-4655: 'Logo / Image'
-  menu:
-    menu-9180: Menu
-    menu-9681: Menu
-  messages:
-    system-messages-9374: 'System Messages'
   position:
     position-breadcrumbs: Breadcrumbs
   content:
     system-content-9974: 'Page Content'
+  mobile-menu:
+    mobile-menu-4060: Mobile-menu
+  menu:
+    menu-1049: Menu
+    menu-1654: Menu
+    menu-1601: Menu
+    menu-9681: Menu
+  logo:
+    logo-4655: 'Logo / Image'
   copyright:
     copyright-4002: Copyright
   spacer:
     spacer-6176: Spacer
   social:
     social-2655: Social
-  mobile-menu:
-    mobile-menu-4060: Mobile-menu
 inherit:
   blog:
     header: header
-    logo-3958: logo-4799
-    menu-9180: menu-6098
-    system-messages-9374: system-messages-3860
   default:
     footer: footer
+    menu-1049: menu-1837
+    menu-1654: menu-6570
+    menu-1601: menu-9412
     menu-9681: menu-3453
     logo-4655: logo-9571
     copyright-4002: copyright-1736

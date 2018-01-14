@@ -4,28 +4,26 @@ preset:
   name: 2-col-right
   timestamp: 1513307866
 layout:
-  /navigation/: {  }
-  /header/:
+  /navigation/:
     -
-      - 'logo-4799 25'
-      - 'menu-6098 75'
+      - system-messages-3064
     -
-      - system-messages-3860
+      - 'logo-7607 30'
+      - 'menu-1609 70'
+    -
+      - custom-6564
+  /header/: {  }
   /container-main/:
     -
       -
         'main 80':
           -
-            - contentarray-4262
+            - system-content-2268
       -
         'sidebar 20':
           -
             - contentarray-5790
-  /footer/:
-    -
-      - 'copyright-1537 40'
-      - 'spacer-3170 30'
-      - 'branding-9538 30'
+  footer: {  }
   offcanvas:
     -
       - mobile-menu-1349
@@ -39,6 +37,9 @@ structure:
     attributes:
       boxed: '2'
       class: ''
+  main:
+    attributes:
+      class: blog-section
   sidebar:
     type: section
     subtype: aside
@@ -48,57 +49,30 @@ structure:
     attributes:
       boxed: ''
   footer:
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
 content:
-  logo-4799:
+  logo-7607:
     title: 'Logo / Image'
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-      particle: logo-9608
-  menu-6098:
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - block
-      particle: menu-6409
-  system-messages-3860:
-    inherit:
-      outline: default
-      particle: system-messages-7972
-      include:
-        - attributes
-        - block
-  contentarray-4262:
-    title: 'WordPress Posts'
     attributes:
-      post:
-        filter:
-          categories: '20'
-          posts: ''
-          sticky: ''
-        limit:
-          total: '6'
-          columns: '1'
-          start: '0'
-        sort:
-          orderby: date
-          ordering: DESC
-        display:
-          image:
-            enabled: show
-          title:
-            enabled: show
-          read_more:
-            enabled: show
-            label: ''
+      image: 'gantry-media://2017/12/rc_logo.png'
+      svg: ''
+  menu-1609:
+    attributes:
+      menu: mainmenu
+      base: /
+      mobileTarget: '1'
+  custom-6564:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"tagline\">\n   <div class=\"tag\">Blog</div>\n   <h1>The Experience</h1>\n</div>"
   contentarray-5790:
     title: 'WordPress Posts'
     attributes:
+      enabled: 0
       post:
         filter:
           categories: '1 20'

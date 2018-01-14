@@ -1,0 +1,18 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+		<div class="flex-row {{ particle.css.class|e }}">
+		{% for item in particle.items %}
+		    <div class="flex-item">
+			    {% if item.icon %}
+			        <i class="{{ item.icon }}"></i>
+			    {% endif %}
+		      <h2>{{ item.title }}</h2>
+		      <p>{{ item.post }}</p>
+		    </div>
+		{% endfor %}
+		</div>
+{% endblock %}
+
+
+

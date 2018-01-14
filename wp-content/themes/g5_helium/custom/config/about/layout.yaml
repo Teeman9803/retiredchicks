@@ -8,8 +8,8 @@ layout:
     -
       - system-messages-2770
     -
-      - 'logo-5067 25'
-      - 'menu-3355 75'
+      - 'logo-5067 30'
+      - 'menu-3355 70'
     -
       - custom-6122
   /header/: {  }
@@ -19,10 +19,16 @@ layout:
     -
       - custom-3566
     -
-      - contentarray-7489
+      - featurepost-6562
+    -
+      - contentarray-7935
+    -
+      - contentarray-2972
   /features/:
     -
       - custom-9016
+    -
+      - contentarray-2131
     -
       - social-2204
   /utility/: {  }
@@ -42,7 +48,17 @@ layout:
         'mainbar 50': {  }
       -
         'sidebar 25': {  }
-  footer: {  }
+  /footer/:
+    -
+      - 'menu-6699 25'
+      - 'menu-3490 25'
+      - 'menu-8016 25'
+      - 'menu-8981 25'
+    -
+      - 'logo-2980 10'
+      - 'copyright-3946 45'
+      - 'spacer-2331 30'
+      - 'social-3680 15'
   /offcanvas/:
     -
       - mobile-menu-6875
@@ -60,12 +76,12 @@ structure:
     type: section
     attributes:
       boxed: ''
-      class: 'slab-center intro'
+      class: 'slab-center about-section'
   features:
     type: section
     attributes:
       boxed: ''
-      class: slab-center
+      class: 'slab-center partners-section'
   utility:
     type: section
     attributes:
@@ -79,7 +95,7 @@ structure:
     type: section
     attributes:
       boxed: ''
-      class: slab-left
+      class: 'slab-left initiatives-section'
   expanded:
     type: section
     attributes:
@@ -103,11 +119,9 @@ structure:
     attributes:
       boxed: ''
   footer:
-    inherit:
-      outline: default
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: ''
+      class: ''
   offcanvas:
     attributes:
       boxed: ''
@@ -124,6 +138,7 @@ content:
     attributes:
       menu: mainmenu
       base: /
+      mobileTarget: '1'
   custom-6122:
     title: 'Custom HTML'
     attributes:
@@ -131,6 +146,7 @@ content:
   logo-5980:
     title: 'Logo / Image'
     attributes:
+      enabled: 0
       image: ''
       link: '0'
       svg: ''
@@ -138,10 +154,73 @@ content:
   custom-3566:
     title: 'Custom HTML'
     attributes:
+      enabled: 0
       html: "<div>\n<div class=\"tag\">The CEO</div>\n<h2 class=\"title\">Tamara McCutcheon</h2>\n<q class=\"body\">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</q>\n</div>"
       twig: '0'
       filter: '0'
-  contentarray-7489:
+  featurepost-6562:
+    title: 'Feature Post'
+    attributes:
+      enabled: 0
+      css:
+        class: ''
+      items:
+        -
+          title: 'Contact us'
+          icon: 'fa fa-support fa-fw fa-4x'
+          post: 'Intrinsicly incentivize multifunctional synergy through web-enabled.'
+          name: 'Contact Us'
+        -
+          title: 'Our Mission'
+          icon: 'fa fa-rocket fa-fw fa-4x'
+          post: 'Intrinsicly incentivize multifunctional synergy through web-enabled.'
+          name: 'Our Mission'
+        -
+          title: 'Our Pledge'
+          icon: 'fa fa-flag fa-fw fa-4x'
+          post: 'Intrinsicly incentivize multifunctional synergy through web-enabled.'
+          name: 'Our Pledge'
+        -
+          title: 'Our Guarantee'
+          icon: 'fa fa-star fa-fw fa-4x'
+          post: 'Intrinsicly incentivize multifunctional synergy through web-enabled.'
+          name: 'Our Guarantee'
+    block:
+      class: about-features
+  contentarray-7935:
+    title: 'WordPress Posts'
+    attributes:
+      post:
+        filter:
+          categories: '56'
+          posts: ''
+          sticky: ''
+        limit:
+          total: '1'
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: date
+          ordering: DESC
+        display:
+          image:
+            enabled: ''
+          title:
+            enabled: ''
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+          comments:
+            enabled: ''
+          text:
+            type: content
+            formatting: html
+  contentarray-2972:
     title: 'WordPress Posts'
     attributes:
       post:
@@ -155,12 +234,12 @@ content:
           start: '0'
         sort:
           orderby: date
-          ordering: ASC
+          ordering: DESC
         display:
           image:
             enabled: ''
           title:
-            enabled: show
+            enabled: ''
           date:
             enabled: ''
           read_more:
@@ -172,13 +251,49 @@ content:
           comments:
             enabled: ''
           text:
-            type: content
+            formatting: html
   custom-9016:
     title: 'Custom HTML'
     attributes:
-      html: "<div class=\"slab\">\n<h2 class=\"title\">Our Partners</h2>\n<p class=\"body\">Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>\n</div>"
+      enabled: 0
+      html: "<h3 class=\"title\">Our Partners</h3>\n<p class=\"body\">Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>\n"
       twig: '0'
       filter: '0'
+  contentarray-2131:
+    title: 'WordPress Posts'
+    attributes:
+      post:
+        filter:
+          categories: ''
+          posts: ''
+          sticky: ''
+        limit:
+          total: '1'
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: date
+          ordering: DESC
+        display:
+          image:
+            enabled: ''
+          title:
+            enabled: ''
+          date:
+            enabled: ''
+          read_more:
+            enabled: ''
+            label: ''
+          author:
+            enabled: ''
+          category:
+            enabled: ''
+          comments:
+            enabled: ''
+          text:
+            type: content
+            limit: ''
+            formatting: html
   social-2204:
     attributes:
       css:
@@ -203,13 +318,17 @@ content:
   custom-2018:
     title: 'Custom HTML'
     attributes:
-      html: "<div>\n<div>Our Initiatives</div>\n</div>"
+      enabled: 0
+      html: '<h3 class="title">Our Initiatives</h3>'
       twig: '0'
       filter: '0'
   menu-9529:
     attributes:
       menu: initiatives
       base: /
+      mobileTarget: '1'
+    block:
+      class: 'menu menu-vertical'
   contentarray-9821:
     title: 'WordPress Posts'
     attributes:
@@ -226,10 +345,16 @@ content:
           orderby: date
           ordering: DESC
         display:
+          image:
+            enabled: ''
           title:
             enabled: show
           date:
             enabled: ''
+          read_more:
+            enabled: show
+            label: 'Read More'
+            css: small
           author:
             enabled: ''
           category:
@@ -238,3 +363,54 @@ content:
             enabled: ''
           text:
             formatting: html
+  menu-6699:
+    attributes:
+      menu: footer-sections
+      base: /
+    block:
+      class: 'menu menu-vertical'
+  menu-3490:
+    attributes:
+      menu: footer-shop
+      mobileTarget: '1'
+    block:
+      class: 'menu menu-vertical'
+  menu-8016:
+    attributes:
+      menu: footer-outreach
+    block:
+      class: 'menu menu-vertical'
+  menu-8981:
+    attributes:
+      menu: footer-legal
+    block:
+      class: 'menu menu-vertical'
+  logo-2980:
+    title: 'Logo / Image'
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: logo-9571
+  copyright-3946:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: copyright-1736
+  spacer-2331:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: spacer-2556
+  social-3680:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+      particle: social-7256

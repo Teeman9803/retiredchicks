@@ -1,5 +1,5 @@
 name: about
-timestamp: 1515072045
+timestamp: 1515767814
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -31,13 +31,20 @@ particles:
     menu-3355: Menu
     menu-9529: Menu
     menu-6699: Menu
+    menu-3490: Menu
+    menu-8016: Menu
+    menu-8981: Menu
   custom:
     custom-6122: 'Custom HTML'
     custom-3566: 'Custom HTML'
     custom-9016: 'Custom HTML'
     custom-2018: 'Custom HTML'
+  featurepost:
+    featurepost-6562: 'Feature Post'
   contentarray:
-    contentarray-7489: 'WordPress Posts'
+    contentarray-7935: 'WordPress Posts'
+    contentarray-2972: 'WordPress Posts'
+    contentarray-2131: 'WordPress Posts'
     contentarray-9821: 'WordPress Posts'
   social:
     social-2204: Social
@@ -50,8 +57,6 @@ particles:
     mobile-menu-6875: Mobile-menu
 inherit:
   default:
-    footer: footer
-    menu-6699: menu-3453
     logo-2980: logo-9571
     copyright-3946: copyright-1736
     spacer-2331: spacer-2556

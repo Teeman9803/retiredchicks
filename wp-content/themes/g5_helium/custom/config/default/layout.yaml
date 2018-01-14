@@ -37,7 +37,10 @@ layout:
             - position-position-3949
   /footer/:
     -
-      - menu-3453
+      - 'menu-1837 25'
+      - 'menu-6570 25'
+      - 'menu-9412 25'
+      - 'menu-3453 25'
     -
       - 'logo-9571 10'
       - 'copyright-1736 45'
@@ -146,10 +149,27 @@ content:
     title: Sidebar
     attributes:
       key: sidebar
+  menu-1837:
+    attributes:
+      menu: footer-sections
+    block:
+      class: 'menu menu-vertical'
+  menu-6570:
+    attributes:
+      menu: footer-shop
+    block:
+      class: 'menu menu-vertical'
+  menu-9412:
+    attributes:
+      menu: footer-outreach
+    block:
+      class: 'menu menu-vertical'
   menu-3453:
     attributes:
-      menu: footer
+      menu: footer-legal
       base: /
+    block:
+      class: 'menu menu-vertical'
   logo-9571:
     title: 'Logo / Image'
     attributes:

@@ -1,4 +1,9 @@
 
+@mixin icon($font-size, $color) {
+  font-size: $font-size;
+  color: $color;
+}
+
 @mixin tag($font-size, $background: transparent) {
   padding: .25rem 1.5rem;
   display: inline;
@@ -15,4 +20,32 @@
   background-position: top center;
   border-radius: 50%;
   margin: 0 auto;
+}
+
+@mixin nav-vertical($background-color: transparent, $border-color: transparent) {
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      &:not(:last-child) {
+        border-bottom: 1px solid $border-color;
+      }
+    }
+  }
+  nav {
+    background: $background-color;
+  }
+}
+
+@mixin masonry() {
+  display: flex;
+  flex-flow: row wrap;
+  //margin-left: -8px;
+  height: auto;
+  .g-grid {
+    flex: auto;
+    //height: 250px;
+    min-width: 150px;
+    margin: 0;
+  }
 }

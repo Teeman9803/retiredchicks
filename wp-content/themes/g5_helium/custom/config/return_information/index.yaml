@@ -1,5 +1,5 @@
 name: return_information
-timestamp: 1513607747
+timestamp: 1515635381
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -14,34 +14,33 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  logo:
-    logo-7955: 'Logo / Image'
-    logo-6529: 'Logo / Image'
-  menu:
-    menu-1661: Menu
-    menu-4147: Menu
-  messages:
-    system-messages-2005: 'System Messages'
   position:
     position-breadcrumbs: Breadcrumbs
   content:
     system-content-6865: 'Page Content'
+  mobile-menu:
+    mobile-menu-8677: Mobile-menu
+  menu:
+    menu-3096: Menu
+    menu-8595: Menu
+    menu-5431: Menu
+    menu-4147: Menu
+  logo:
+    logo-6529: 'Logo / Image'
   copyright:
     copyright-3810: Copyright
   spacer:
     spacer-8867: Spacer
   social:
     social-9813: Social
-  mobile-menu:
-    mobile-menu-8677: Mobile-menu
 inherit:
   blog:
     header: header
-    logo-7955: logo-4799
-    menu-1661: menu-6098
-    system-messages-2005: system-messages-3860
   default:
     footer: footer
+    menu-3096: menu-1837
+    menu-8595: menu-6570
+    menu-5431: menu-9412
     menu-4147: menu-3453
     logo-6529: logo-9571
     copyright-3810: copyright-1736

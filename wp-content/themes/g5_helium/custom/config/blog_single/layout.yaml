@@ -1,0 +1,75 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: fullpage
+  timestamp: 1513263333
+layout:
+  /navigation/:
+    -
+      - system-messages-1343
+    -
+      - 'logo-3322 30'
+      - 'menu-3133 70'
+    -
+      - custom-1705
+  /header/: {  }
+  /main/:
+    -
+      - position-breadcrumbs
+    -
+      - system-content-5815
+  footer: {  }
+  offcanvas:
+    -
+      - mobile-menu-9910
+structure:
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  header:
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  system-messages-1343:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: system-messages-2770
+  logo-3322:
+    title: 'Logo / Image'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: logo-5067
+  menu-3133:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-3355
+  custom-1705:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"tagline\">\n   <h1>What You Rockin in Your Office?</h1>\n</div>"
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  system-content-5815:
+    block:
+      class: single-post

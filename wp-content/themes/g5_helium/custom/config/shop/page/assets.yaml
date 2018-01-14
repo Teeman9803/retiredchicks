@@ -1,0 +1,10 @@
+javascript:
+  -
+    location: ''
+    inline: "\n$('<div class=\"grid-toggle\">Show Filters</div>').insertBefore('.grid-category');\n$('.grid-toggle').on('click', function() {$('.grid-category').toggleClass('show-filters')});"
+    in_footer: '1'
+    extra: {  }
+    priority: '0'
+    name: 'Shop Filter Toggle'
+  -
+    name: 'New item'

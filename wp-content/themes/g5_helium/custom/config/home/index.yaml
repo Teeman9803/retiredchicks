@@ -1,5 +1,5 @@
 name: home
-timestamp: 1514033008
+timestamp: 1515767814
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -21,36 +21,45 @@ sections:
   offcanvas: Offcanvas
 particles:
   messages:
-    system-messages-5927: 'System Messages'
-  logo:
-    logo-9495: 'Logo / Image'
-    logo-9723: 'Logo / Image'
-  menu:
-    menu-5640: Menu
-    menu-6948: Menu
+    system-messages-2784: 'System Messages'
   owlcarousel:
     owlcarousel-4206: 'Owl Carousel'
-  contentcubes:
-    contentcubes-7157: 'Content Cubes'
+  logo:
+    logo-1433: 'Logo / Image'
+    logo-5561: 'Logo / Image'
+  menu:
+    menu-1081: Menu
+    menu-9072: Menu
+    menu-3371: Menu
+    menu-2194: Menu
+    menu-2197: Menu
+  custom:
+    custom-2768: 'Custom HTML'
+  content:
+    system-content-1451: 'Page Content'
   copyright:
-    copyright-7744: Copyright
+    copyright-2568: Copyright
   spacer:
-    spacer-5040: Spacer
+    spacer-4165: Spacer
   social:
-    social-7083: Social
+    social-8906: Social
   mobile-menu:
     mobile-menu-5724: Mobile-menu
 inherit:
-  default:
-    navigation: navigation
-    system-messages-5927: system-messages-7972
-    logo-9495: logo-9608
-    menu-5640: menu-6409
+  about:
+    system-messages-2784: system-messages-2770
+    logo-1433: logo-5067
+    menu-1081: menu-3355
+    custom-2768: custom-6122
     footer: footer
-    menu-6948: menu-3453
-    logo-9723: logo-9571
-    copyright-7744: copyright-1736
-    spacer-5040: spacer-2556
-    social-7083: social-7256
+    menu-9072: menu-6699
+    menu-3371: menu-3490
+    menu-2194: menu-8016
+    menu-2197: menu-8981
+    logo-5561: logo-2980
+    copyright-2568: copyright-3946
+    spacer-4165: spacer-2331
+    social-8906: social-3680
+  default:
     offcanvas: offcanvas
     mobile-menu-5724: mobile-menu-5697

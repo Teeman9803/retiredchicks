@@ -1,0 +1,8 @@
+preset: preset6
+header:
+  background-image: 'gantry-media://2017/12/pexels-photo-235509-1024x683.jpeg'
+  background-overlay: enabled
+expanded:
+  text-color: '#ffffff'
+footer:
+  background: '#2a2a2a'

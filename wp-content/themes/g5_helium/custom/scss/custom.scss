@@ -2,9 +2,11 @@
 @import "variables";
 @import "core";
 @import "mixins";
+@import "buttons";
 @import "carousel";
 @import "nav";
 @import "badges";
 @import "about";
+@import "blog";
 @include import-font('montserrat');
 
