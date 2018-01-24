@@ -49,3 +49,25 @@
     margin: 0;
   }
 }
+
+@mixin button($background: transparent, $color: #ffffff) {
+  display: inline-block;
+  font-family: "Montserrat";
+  font-weight: 600;
+  background-color: $background;
+  //font-size: 0.8rem;
+  line-height: 1.15;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  color: $color;
+  border: 1px solid transparent;
+  border-radius: 2.5rem;
+  margin: 0 0 0.5rem 0;
+  //padding: 1.5rem 3.125rem;
+  padding: 0.5rem 1rem;
+  vertical-align: middle;
+  text-shadow: none;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}

@@ -1,5 +1,5 @@
 name: about
-timestamp: 1515932401
+timestamp: 1516703984
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -36,7 +36,7 @@ particles:
     menu-8981: Menu
   custom:
     custom-6122: 'Custom HTML'
-    custom-3566: 'Custom HTML'
+    custom-3566: Breadcrumbs
     custom-9016: 'Custom HTML'
     custom-2018: 'Custom HTML'
   featurepost:

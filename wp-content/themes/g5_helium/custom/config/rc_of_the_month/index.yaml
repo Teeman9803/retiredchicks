@@ -1,12 +1,11 @@
 name: rc_of_the_month
-timestamp: 1513308043
+timestamp: 1516703984
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: fullpage
   timestamp: 1513263333
 positions:
-  breadcrumbs: Breadcrumbs
   footer: Footer
 sections:
   navigation: Navigation
@@ -21,11 +20,12 @@ particles:
     logo-9608: Logo
   menu:
     menu-6409: Menu
-  position:
-    position-breadcrumbs: Breadcrumbs
-    position-footer: Footer
+  custom:
+    custom-6034: Breadcrumbs
   content:
     system-content-7703: 'Page Content'
+  position:
+    position-footer: Footer
   copyright:
     copyright-5001: Copyright
   spacer:
@@ -34,4 +34,6 @@ particles:
     branding-2142: Branding
   mobile-menu:
     mobile-menu-6314: Mobile-menu
-inherit: {  }
+inherit:
+  about:
+    custom-6034: custom-3566

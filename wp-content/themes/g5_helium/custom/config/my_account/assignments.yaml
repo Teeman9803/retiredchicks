@@ -1,0 +1,11 @@
+context: {  }
+menu: {  }
+language: {  }
+post:
+  page:
+    430: true
+taxonomy: {  }
+archive: {  }
+woocommerce:
+  -
+    is_account_page: true

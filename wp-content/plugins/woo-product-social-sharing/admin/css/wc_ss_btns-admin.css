@@ -1,0 +1,61 @@
+.wc_ss_table {
+	margin-top: 15px;
+	width: 100%;
+}
+.wc_ss_table > tbody > tr > td:first-of-type
+{
+	width: 200px;
+	display: table-cell;
+	vertical-align: top;
+	padding: 5px;
+}
+.wc_ss_table > tbody > tr > td {
+	padding-bottom: 30px;
+}
+.wc_ss_table > tbody > tr > td:first-of-type > span {
+	display: block;
+	font-weight: 700;
+}
+.wc_ss_table ul > li {
+	float: left;
+	min-width: 25%;
+}
+.wc_ss_table ul > li > i {
+	width: 24px;
+    display: inline-block;
+    text-align: center;
+}
+.wc_ss_btns-notice {
+    padding: 8px;
+}
+.wc_ss_btns-notice.wc_ss_btns-notice-info {
+	background-color: #fff;
+    border-left: 4px solid rgba(25,118,210, 0.6);
+}
+.wc_ss_btns-notice.wc_ss_btns-notice-warning {
+	background-color: #fff;
+    border-left: 4px solid rgba(255,193,7, 0.6);
+}
+.wc_ss_btns-notice.wc_ss_btns-notice-danger {
+	background-color: rgba(244,67,54, 0.07);
+    border: 1px solid rgba(244,67,54, 0.07);
+}
+.ss_btns_thankyou_msg,
+.ss_btns_version_msg {
+	float: right;
+	padding: 0;
+	padding-left: 15px;
+	font-size: 60%;
+}
+.ss_btns_version_msg {
+	font-size: 60%;
+}
+.ss_btns_thankyou_msg.footer {
+	float: none;
+	font-size: 100%;
+	padding-left: 0;
+}
+.wc_ss_btns-float-post-types,
+.wc_ss_btns-float-positions {
+	display: none;
+}

@@ -1,0 +1,10 @@
+atoms:
+  -
+    title: 'Google Analytics'
+    type: analytics
+    id: analytics-6662
+    inherit:
+      outline: default
+      atom: analytics-6662
+      include:
+        - attributes

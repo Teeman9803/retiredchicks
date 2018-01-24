@@ -102,7 +102,8 @@
     }
 
     nav {
-      width: 15rem;
+      width: auto;
+      margin-right: 2rem;
     }
     > div[id*='menu-'] {
       margin: 0;
@@ -126,3 +127,21 @@ footer {
     color: $med-gray;
   }
 }
+
+.g-sublevel {
+  background: #2a2a2a;
+}
+
+#g-navigation .g-sublevel .g-menu-item-title {
+  font-size: .8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.g-main-nav .g-standard .g-sublevel > li {
+  border-bottom: 1px solid #555;
+  margin: 0;
+  padding: 0 9px;
+}
+
+

@@ -44,12 +44,20 @@
                   <?php echo esc_html($date); ?>
                 </div>
             <?php endif; ?>
-            <?php if(!empty($excerpt) && ($category[1]->name == 'Feature')): ?>
+            <?php if(!empty($excerpt) && ($category[1]->name == 'Feature') || $category[0]->name == 'Feature'): ?>
                 <div class="excerpt"><?php echo esc_html($excerpt); ?></div>
             <?php endif; ?>
             <?php
-              if(get_post_type($post->ID) == 'podcast') {
+              if(get_post_type($post->ID) == 'podcast' || $tag == 'Podcast') {
                 $btntext = 'Listen Now';
+              } elseif ($tag == 'Initiatives') {
+                $btntext = 'View All';
+              } elseif ($tag == 'About Us') {
+                $btntext = 'Who We Are';
+              } elseif ($tag == 'Shop') {
+                $btntext = 'Shop Apparel';
+              } elseif ($tag == 'Video') {
+                $btntext = 'Watch Now';
               }
             ?>
             <div class="read-more">

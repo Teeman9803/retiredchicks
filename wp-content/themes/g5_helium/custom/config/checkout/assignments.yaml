@@ -1,0 +1,9 @@
+context: {  }
+menu: {  }
+language: {  }
+post: {  }
+taxonomy: {  }
+archive: {  }
+woocommerce:
+  -
+    is_checkout: true

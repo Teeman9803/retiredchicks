@@ -1,0 +1,74 @@
+<?php
+
+/**
+ * Provide a admin area view for the plugin
+ *
+ * This file is used to markup the admin-facing aspects of the plugin.
+ *
+ * @link       http://defthemes.com
+ * @since      1.0.0
+ *
+ * @package    Wc_ss_btns
+ * @subpackage Wc_ss_btns/admin/partials
+ */
+
+
+?>
+
+<div class="wrap">
+	<div id="icon-themes" class="icon32"></div>
+
+ 	<h2><?php echo esc_html( get_admin_page_title() ); ?> Settings</h2>
+
+	<?php if ( isset($update) && $update ): ?>
+	<div class="updated notice">
+		<p>Settings updated successfully!</p>
+	</div>
+	<?php elseif ( isset($update) && !$update ): ?>
+	<div class="error notice">
+		<p>No changes were made!</p>
+	</div>
+	<?php endif; ?>
+
+	<?php
+	$active_tab = isset( $_GET[ 'tab' ] ) ? $_GET[ 'tab' ] : 'general_settings';
+	?>
+
+	<h2 class="nav-tab-wrapper">
+		<?php do_action( 'ss_btns_before_tabbed_nav_about_link' ); ?>
+		<a href="?page=<?php echo $plugin_name; ?>&tab=about"  class="nav-tab <?php echo $active_tab == 'about' ? 'nav-tab-active' : ''; ?>">About</a>
+		<?php do_action( 'ss_btns_after_tabbed_nav_about_link' ); ?>
+
+		<?php do_action( 'ss_btns_before_tabbed_nav_general_settings_link' ); ?>
+        <a href="?page=<?php echo $plugin_name; ?>&tab=general_settings"  class="nav-tab <?php echo $active_tab == 'general_settings' ? 'nav-tab-active' : ''; ?>">General Settings</a>
+        <?php do_action( 'ss_btns_after_tabbed_nav_general_settings_link' ); ?>
+
+        <?php do_action( 'ss_btns_before_tabbed_nav_networks_link' ); ?>
+        <a href="?page=<?php echo $plugin_name; ?>&tab=networks"  class="nav-tab <?php echo $active_tab == 'networks' ? 'nav-tab-active' : ''; ?>">Networks</a>
+        <?php do_action( 'ss_btns_after_tabbed_nav_networks_link' ); ?>
+
+        <?php do_action( 'ss_btns_before_tabbed_nav_about_link' ); ?>
+        <a href="?page=<?php echo $plugin_name; ?>&tab=display_options"  class="nav-tab <?php echo $active_tab == 'display_options' ? 'nav-tab-active' : ''; ?>">Display Options</a>
+        <?php do_action( 'ss_btns_after_tabbed_nav_about_link' ); ?>
+
+        <?php do_action( 'ss_btns_after_tabbed_nav' ); ?>
+    </h2>
+
+    
+ 	<?php
+ 	if ( $active_tab == 'general_settings' )
+ 		require plugin_dir_path( __FILE__ ) . 'wc_ss_btns-admin-general_settings.php';
+ 	elseif ( $active_tab == 'networks' )
+ 		require plugin_dir_path( __FILE__ ) . 'wc_ss_btns-admin-networks_settings.php';
+ 	elseif ( $active_tab == 'display_options' )
+ 		require plugin_dir_path( __FILE__ ) . 'wc_ss_btns-admin-display_settings.php';
+ 	elseif ( $active_tab == 'about' )
+ 		require plugin_dir_path( __FILE__ ) . 'wc_ss_btns-admin-about.php';
+ 	?>
+
+
+ 	<?php do_action( 'ss_btns_after_settings_page' ); ?>
+    
+ 
+</div><!-- .wrap -->
+

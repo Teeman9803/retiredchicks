@@ -1,12 +1,11 @@
 name: initiatives
-timestamp: 1515635381
+timestamp: 1516703984
 version: 7
 preset:
   image: 'gantry-media://images/admin/layouts/2-col-left.png'
   name: 2-col-left
   timestamp: 1513307855
 positions:
-  breadcrumbs: Breadcrumbs
   footer: Footer
 sections:
   navigation: Navigation
@@ -19,15 +18,17 @@ particles:
   menu:
     menu-4581: Menu
     menu-7848: Menu
-  position:
-    position-breadcrumbs: Breadcrumbs
-    position-footer: Footer
+  custom:
+    custom-8152: Breadcrumbs
+    custom-4848: 'Custom HTML'
   content:
     system-content-4937: 'Page Content'
   widget:
     position-widget-7034: Widget
   social:
     social-3179: Social
+  position:
+    position-footer: Footer
   copyright:
     copyright-6344: Copyright
   spacer:
@@ -40,8 +41,6 @@ particles:
     system-messages-4129: 'System Messages'
   logo:
     logo-4941: 'Logo / Image'
-  custom:
-    custom-4848: 'Custom HTML'
 inherit:
   blog:
     navigation: navigation
@@ -50,3 +49,5 @@ inherit:
     logo-4941: logo-7607
     menu-7848: menu-1609
     custom-4848: custom-6564
+  about:
+    custom-8152: custom-3566

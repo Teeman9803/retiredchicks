@@ -18,7 +18,11 @@ layout:
       -
         'main 80':
           -
+            - custom-9710
+          -
             - system-content-1440
+          -
+            - custom-5085
       -
         'sidebar 20': {  }
   footer: {  }
@@ -81,3 +85,16 @@ content:
     title: 'Custom HTML'
     attributes:
       html: "<div class=\"tagline\">\n   <div class=\"tag\">Podcast</div>\n   <h1>Listen Now</h1>\n</div>"
+  custom-9710:
+    title: Breadcrumbs
+    inherit:
+      outline: about
+      particle: custom-3566
+      include:
+        - attributes
+        - block
+  custom-5085:
+    title: 'Custom HTML'
+    attributes:
+      html: '[grid_plus name="podcast_grid"]'
+      filter: '1'

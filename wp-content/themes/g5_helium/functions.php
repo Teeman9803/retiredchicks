@@ -54,3 +54,74 @@ foreach ($helpers as $file) {
 
     require $filepath;
 }
+
+add_action( 'init', 'jk_remove_wc_breadcrumbs' );
+function jk_remove_wc_breadcrumbs() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}
+
+add_filter( 'breadcrumb_trail_inline_style', '__return_false' );
+
+
+add_filter( 'woocommerce_shortcode_products_query' , 'bbloomer_exclude_cat_shortcodes');
+
+function bbloomer_exclude_cat_shortcodes($query_args){
+
+    $query_args['tax_query'] =  array(array(
+            'taxonomy' => 'product_cat',
+            'field' => 'slug',
+            'terms' => array('black'), // Don't display products from this category
+            'operator' => 'NOT IN'
+        ));
+
+    return $query_args;
+}
+
+function wooc_extra_register_fields() {
+    ?>
+
+    <p class="form-row form-row-first">
+    <label for="reg_billing_first_name"><?php _e( 'First name', 'woocommerce' ); ?> <span class="required">*</span></label>
+    <input type="text" class="input-text" name="billing_first_name" id="reg_billing_first_name" value="<?php if ( ! empty( $_POST['billing_first_name'] ) ) esc_attr_e( $_POST['billing_first_name'] ); ?>" />
+    </p>
+
+    <p class="form-row form-row-last">
+    <label for="reg_billing_last_name"><?php _e( 'Last name', 'woocommerce' ); ?> <span class="required">*</span></label>
+    <input type="text" class="input-text" name="billing_last_name" id="reg_billing_last_name" value="<?php if ( ! empty( $_POST['billing_last_name'] ) ) esc_attr_e( $_POST['billing_last_name'] ); ?>" />
+    </p>
+
+    <div class="clear"></div>
+
+    <p class="form-row form-row-wide">
+    <label for="reg_billing_phone"><?php _e( 'Phone', 'woocommerce' ); ?> <span class="required">*</span></label>
+    <input type="text" class="input-text" name="billing_phone" id="reg_billing_phone" value="<?php if ( ! empty( $_POST['billing_phone'] ) ) esc_attr_e( $_POST['billing_phone'] ); ?>" />
+    </p>
+
+    <?php
+}
+
+add_action( 'woocommerce_register_form_start', 'wooc_extra_register_fields' );
+
+function custom_login_text() {
+    if( ! is_user_logged_in() ){
+        //Your link
+        $link = home_url( '/my-account' );
+
+        // The displayed (output)
+        echo '<p>'. __("<a id='login' href='$link'>Not a user? Register Now<a/>", "woocommerce").'</p>';
+    }
+}
+add_action( 'woocommerce_login_form_end', 'custom_login_text' );
+
+function custom_registration_text() {
+    if( ! is_user_logged_in() ){
+
+    $link = home_url( '/my-account' );
+
+        // The displayed (output)
+                echo '<p>'. __("<a id='register' href='$link'>Already registered? Sign in Now<a/>", "woocommerce").'</p>';
+
+    }
+}
+add_action( 'woocommerce_register_form_end', 'custom_registration_text' );
+

@@ -1,0 +1,4 @@
+preset: preset6
+header:
+  background-image: 'gantry-media://header/pexels-photo-802581.jpeg'
+  background-overlay: enabled

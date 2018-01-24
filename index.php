@@ -13,5 +13,14 @@
  */
 define('WP_USE_THEMES', true);
 
+/*if(is_archive()) {
+    // force 404
+    $wp_query->set_404();
+    status_header( 404 );
+    nocache_headers();
+    include("404.php");
+    die;
+}*/
+
 /** Loads the WordPress Environment and Template */
 require( dirname( __FILE__ ) . '/wp-blog-header.php' );

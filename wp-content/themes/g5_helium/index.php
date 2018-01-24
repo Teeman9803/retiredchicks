@@ -57,6 +57,7 @@ if ($cat != '') {
 $context['posts']      = Timber::get_posts();
 $context['pagination'] = Timber::get_pagination();
 
+
 $templates = ['index.html.twig'];
 
 if (is_home()) {

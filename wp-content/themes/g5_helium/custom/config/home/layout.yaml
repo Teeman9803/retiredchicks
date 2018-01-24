@@ -6,15 +6,15 @@ preset:
 layout:
   /navigation/:
     -
-      - system-messages-2784
+      - system-messages-5537
     -
-      - owlcarousel-4206
+      - 'logo-1176 30'
+      - 'menu-8447 70'
     -
-      - 'logo-1433 25'
-      - 'menu-1081 75'
+      - custom-8073
+  /header/:
     -
-      - custom-2768
-  /header/: {  }
+      - owlcarousel-4121
   /intro/: {  }
   /features/: {  }
   /utility/: {  }
@@ -24,11 +24,15 @@ layout:
   /container-main/:
     -
       -
-        'mainbar 75':
+        'mainbar 95':
           -
-            - system-content-1451
+            - custom-6676
+          -
+            - custom-4035
+          -
+            - custom-9319
       -
-        'sidebar 25': {  }
+        'sidebar 5': {  }
   footer: {  }
   offcanvas: {  }
 structure:
@@ -69,12 +73,16 @@ structure:
   mainbar:
     type: section
     subtype: main
+    attributes:
+      class: ''
   sidebar:
     type: section
     subtype: aside
   container-main:
     attributes:
       boxed: ''
+      class: 'home-section g-flushed'
+      extra: {  }
   footer:
     inherit:
       outline: about
@@ -88,14 +96,35 @@ structure:
         - attributes
         - children
 content:
-  system-messages-2784:
+  system-messages-5537:
     inherit:
       outline: about
-      particle: system-messages-2770
       include:
         - attributes
         - block
-  owlcarousel-4206:
+      particle: system-messages-2770
+  logo-1176:
+    title: 'Logo / Image'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: logo-5067
+  menu-8447:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-3355
+  custom-8073:
+    title: 'Custom HTML'
+    attributes:
+      enabled: 0
+      html: '[owl-carousel]'
+      filter: '1'
+  owlcarousel-4121:
     title: 'Owl Carousel'
     attributes:
       dots: enable
@@ -105,40 +134,54 @@ content:
       items:
         -
           image: 'gantry-media://header/pexels-photo-235509.jpeg'
-          title: 'Shop Women'
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at rutrum orci, vitae gravida purus. Duis id enim nunc. Pellentesque justo quam, posuere eu sagittis quis, varius nec risus. Mauris ante lacus, fermentum ac urna nec, bibendum ornare lorem. Mauris a metus dictum lacus accumsan imperdiet non cursus velit. '
+          title: 'Shop Apparel'
+          desc: 'Credibly deliver next-generation collaboration and idea-sharing with B2C materials. Conveniently reintermediate innovative.'
           link: shop
           linktext: 'Shop Now'
-          buttonclass: button-outline
-          name: 'Shop Women'
+          buttonclass: 'button-primary large'
+          name: Shop
         -
-          image: 'gantry-media://header/pexels-photo-247298.jpeg'
+          image: 'gantry-media://header/pexels-photo-737471.jpeg'
           title: Podcasts
-          desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at rutrum orci, vitae gravida purus. Duis id enim nunc. Pellentesque justo quam, posuere eu sagittis quis, varius nec risus. Mauris ante lacus, fermentum ac urna nec, bibendum ornare lorem. Mauris a metus dictum lacus accumsan imperdiet non cursus velit. '
+          desc: 'Credibly deliver next-generation collaboration and idea-sharing with B2C materials. Conveniently reintermediate innovative.'
           link: podcasts
           linktext: 'Listen Now'
-          buttonclass: button-outline
-          name: Podcasts
-  logo-1433:
-    title: 'Logo / Image'
-    inherit:
-      outline: about
-      include:
-        - attributes
-        - block
-      particle: logo-5067
-  menu-1081:
-    inherit:
-      outline: about
-      include:
-        - attributes
-        - block
-      particle: menu-3355
-  custom-2768:
+          buttonclass: large
+          name: Podcast
+        -
+          image: 'gantry-media://header/pexels-photo-247298.jpeg'
+          title: 'RC of the Month'
+          desc: 'Energistically network fully tested materials rather than 2.0 markets. Phosfluorescently synthesize high.'
+          link: rc-of-the-month
+          linktext: 'Read Now'
+          buttonclass: large
+          name: 'RC of the Month'
+        -
+          image: 'gantry-media://header/pexels-photo-242829.jpeg'
+          title: Initiatives
+          desc: 'Energistically network fully tested materials rather than 2.0 markets. Phosfluorescently synthesize high.'
+          link: initiatives
+          linktext: 'View All'
+          buttonclass: large
+          name: Intiatives
+    block:
+      fixed: '1'
+  custom-6676:
     title: 'Custom HTML'
-    inherit:
-      outline: about
-      include:
-        - attributes
-        - block
-      particle: custom-6122
+    attributes:
+      html: '[grid_plus name="home_grid_blog"]'
+      filter: '1'
+    block:
+      class: feature-post
+  custom-4035:
+    title: 'Custom HTML'
+    attributes:
+      html: '[grid_plus name="podcast_grid_test"]'
+      filter: '1'
+  custom-9319:
+    title: 'Custom HTML'
+    attributes:
+      html: "[grid_plus name=\"home_grid_social\"]\n"
+      filter: '1'
+    block:
+      class: home-social

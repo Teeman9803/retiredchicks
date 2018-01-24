@@ -8,7 +8,7 @@ layout:
   header: {  }
   /main/:
     -
-      - position-breadcrumbs
+      - custom-7029
     -
       - system-content-3083
   footer: {  }
@@ -36,6 +36,11 @@ structure:
         - attributes
         - children
 content:
-  position-breadcrumbs:
-    attributes:
-      key: breadcrumbs
+  custom-7029:
+    title: Breadcrumbs
+    inherit:
+      outline: about
+      particle: custom-3566
+      include:
+        - attributes
+        - block

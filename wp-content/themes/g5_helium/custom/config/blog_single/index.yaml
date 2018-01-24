@@ -1,12 +1,11 @@
 name: blog_single
-timestamp: 1515932401
+timestamp: 1516703984
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: fullpage
   timestamp: 1513263333
-positions:
-  breadcrumbs: Breadcrumbs
+positions: {  }
 sections:
   navigation: Navigation
   header: Header
@@ -27,8 +26,7 @@ particles:
     menu-5615: Menu
   custom:
     custom-1705: 'Custom HTML'
-  position:
-    position-breadcrumbs: Breadcrumbs
+    custom-4017: Breadcrumbs
   content:
     system-content-5815: 'Page Content'
   mobile-menu:
@@ -44,6 +42,7 @@ inherit:
     system-messages-1343: system-messages-2770
     logo-3322: logo-5067
     menu-3133: menu-3355
+    custom-4017: custom-3566
   default:
     footer: footer
     menu-9151: menu-1837

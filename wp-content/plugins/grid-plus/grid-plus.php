@@ -367,6 +367,11 @@ if (!class_exists('Grid_Plus')) {
                     'name'    => 'Podcast Feature',
                     'slug'     => 'podcast-feature',
                     'template' => G5PLUS_GRID_DIR . 'skins/podcast-feature.php'
+                ),
+                array(
+                    'name'    => 'Social Grid',
+                    'slug'     => 'social-content',
+                    'template' => G5PLUS_GRID_DIR . 'skins/social-content.php'
                 )
             );
             $grid_plus_skins = apply_filters('grid-plus-skins', $grid_plus_skins);

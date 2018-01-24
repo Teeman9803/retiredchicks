@@ -18,7 +18,9 @@ layout:
       -
         'main 80':
           -
-            - system-content-2268
+            - custom-4257
+          -
+            - custom-5667
       -
         'sidebar 20':
           -
@@ -69,6 +71,19 @@ content:
     title: 'Custom HTML'
     attributes:
       html: "<div class=\"tagline\">\n   <div class=\"tag\">Blog</div>\n   <h1>The Experience</h1>\n</div>"
+  custom-4257:
+    title: Breadcrumbs
+    inherit:
+      outline: about
+      particle: custom-3566
+      include:
+        - attributes
+        - block
+  custom-5667:
+    title: 'Custom HTML'
+    attributes:
+      html: '[grid_plus name="blog_grid"]'
+      filter: '1'
   contentarray-5790:
     title: 'WordPress Posts'
     attributes:

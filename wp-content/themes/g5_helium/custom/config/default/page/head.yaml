@@ -11,3 +11,12 @@ atoms:
         ssl: false
         debug: false
     id: analytics-6662
+  -
+    id: assets-6797
+    type: assets
+    title: 'Custom CSS / JS'
+    attributes:
+      enabled: '1'
+      css: {  }
+      javascript:
+        - { location: 'gantry-assets://js/scripts.js', inline: '', in_footer: '0', extra: {  }, priority: '0', name: 'Util Scripts' }

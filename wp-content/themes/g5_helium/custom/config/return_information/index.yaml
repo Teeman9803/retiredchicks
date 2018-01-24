@@ -1,12 +1,11 @@
 name: return_information
-timestamp: 1515635381
+timestamp: 1516703984
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: fullpage
   timestamp: 1513263333
-positions:
-  breadcrumbs: Breadcrumbs
+positions: {  }
 sections:
   navigation: Navigation
   header: Header
@@ -14,8 +13,8 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  position:
-    position-breadcrumbs: Breadcrumbs
+  custom:
+    custom-5088: Breadcrumbs
   content:
     system-content-6865: 'Page Content'
   mobile-menu:
@@ -36,6 +35,8 @@ particles:
 inherit:
   blog:
     header: header
+  about:
+    custom-5088: custom-3566
   default:
     footer: footer
     menu-3096: menu-1837

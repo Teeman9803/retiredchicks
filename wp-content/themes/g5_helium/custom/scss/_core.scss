@@ -2,64 +2,69 @@ body {
   font-size: $base-font-size;
   color: $base-font-color;
   font-weight: $base-font-weight;
-}
-
-/** Content Slabs **/
-
-@each $position in $positions {
-  .slab-#{nth($position, 1)} {
-    text-align: nth($position, 2);
+  p {
+    margin: 0;
   }
 }
 
-[class*="slab-"] {
-  .g-content {
-    padding: 0;
-  }
-  .title {
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
+p.body {
+  margin: 1rem 0;
+}
+
+.single-post .meta .tag.small {
+  font-size: .75rem;
+  padding: .25rem .5rem;
+}
+
+body[class*='single-'] .entry-header {
+  text-align: center;
+  a {
+    color: #fff;
+    &:hover {
+      color: darken(#fff, 10%);
+    }
   }
 }
 
-
-/** Flex Rows */
-
-.flex-row {
-  display: flex;
-  justify-content: space-between;
+.tagline h1 {
+  line-height: initial;
 }
 
-/** Feature Posts **/
-.feature-large {
-  .post-info {
-    display: flex;
-    flex-direction: column;
+#wpcomm .wc-blog-post_author > .wc-comment-right .wc-comment-author, #wpcomm .wc-blog-post_author > .wc-comment-right .wc-comment-author a {
+  color: #2a2a2a;
+}
+
+#wpcomm .wc-blog-post_author > .wc-comment-left .wc-comment-label {
+  background: $base-color;
+}
+
+#wpcomm .wc-footer-left .wc-cta-button {
+  background-color: $base-color;
+  border-radius: 25px;
+  padding: .25rem .5rem;
+  height: auto;
+}
+
+.single-post {
+  .meta {
+    i.wp-svg-tag.tag {
+      background: none;
+    }
+  }
+  .meta.flex-row {
     justify-content: center;
-    background-color: $light-gray;
-    height: 100%;
-    width: 36rem;
-    color: $base-font-color;
+  }
+}
 
-  }
-  .thumbnail-image {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 15rem -2.8rem;
-  }
-  .title, .title a {
-    color: inherit;
-    width: 30rem;
-    line-height: 1.1;
-    font-weight: 800;
-    font-size: 2.8rem;
-  }
-  .date {
-    color: $base-font-color;
-  }
-  .tag {
-    color: $base-color;
-  }
+.woocommerce #respond input#submit.disabled, .woocommerce #respond input#submit:disabled, .woocommerce #respond input#submit:disabled[disabled], .woocommerce a.button.disabled, .woocommerce a.button:disabled, .woocommerce a.button:disabled[disabled], .woocommerce button.button.disabled, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled], .woocommerce input.button.disabled, .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled] {
+  background: $light-gray;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option--highlighted[data-selected] {
+  background: $base-color;
+}
+
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
+  background: darken($base-color, 5%);
+  color: #fff;
 }

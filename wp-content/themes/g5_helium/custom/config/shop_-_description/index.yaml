@@ -1,5 +1,5 @@
 name: shop_-_description
-timestamp: 1513307301
+timestamp: 1516703984
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/2-col-right.png'
@@ -24,6 +24,8 @@ particles:
     menu-8139: Menu
   messages:
     system-messages-9548: 'System Messages'
+  custom:
+    custom-8900: Breadcrumbs
   content:
     system-content-6156: 'Page Content'
   copyright:
@@ -34,4 +36,6 @@ particles:
     branding-8622: Branding
   mobile-menu:
     mobile-menu-1058: Mobile-menu
-inherit: {  }
+inherit:
+  about:
+    custom-8900: custom-3566

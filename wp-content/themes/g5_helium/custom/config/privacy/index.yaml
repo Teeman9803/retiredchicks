@@ -1,12 +1,11 @@
 name: privacy
-timestamp: 1515635381
+timestamp: 1516703984
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: fullpage
   timestamp: 1513263333
-positions:
-  breadcrumbs: Breadcrumbs
+positions: {  }
 sections:
   navigation: Navigation
   header: Header
@@ -14,19 +13,25 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  position:
-    position-breadcrumbs: Breadcrumbs
+  custom:
+    custom-1452: Breadcrumbs
+    custom-6058: 'Custom HTML'
   content:
     system-content-8940: 'Page Content'
   mobile-menu:
     mobile-menu-2592: Mobile-menu
+  messages:
+    system-messages-4709: 'System Messages'
+  logo:
+    logo-5136: 'Logo / Image'
+    logo-5358: 'Logo / Image'
   menu:
+    menu-9474: Menu
+    menu-2172: Menu
     menu-9332: Menu
     menu-3767: Menu
     menu-2221: Menu
     menu-8701: Menu
-  logo:
-    logo-5358: 'Logo / Image'
   copyright:
     copyright-6303: Copyright
   spacer:
@@ -34,8 +39,13 @@ particles:
   social:
     social-9870: Social
 inherit:
-  blog:
-    header: header
+  about:
+    navigation: navigation
+    custom-1452: custom-3566
+    system-messages-4709: system-messages-2770
+    logo-5136: logo-5067
+    menu-9474: menu-3355
+    custom-6058: custom-6122
   default:
     footer: footer
     menu-9332: menu-1837

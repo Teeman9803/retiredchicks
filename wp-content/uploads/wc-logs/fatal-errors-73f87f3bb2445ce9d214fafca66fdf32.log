@@ -1,0 +1,2 @@
+2018-01-15T21:52:10+00:00 CRITICAL Method Timber\FunctionWrapper::__toString() must not throw an exception, caught ArgumentCountError: Too few arguments to function Grid_Plus_Base::gf_enqueue_custom_css(), 1 passed in /Applications/MAMP/htdocs/retiredchicks/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected
+

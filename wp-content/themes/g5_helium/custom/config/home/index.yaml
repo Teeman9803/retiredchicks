@@ -1,5 +1,5 @@
 name: home
-timestamp: 1515932401
+timestamp: 1516703984
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -21,22 +21,23 @@ sections:
   offcanvas: Offcanvas
 particles:
   messages:
-    system-messages-2784: 'System Messages'
-  owlcarousel:
-    owlcarousel-4206: 'Owl Carousel'
+    system-messages-5537: 'System Messages'
   logo:
-    logo-1433: 'Logo / Image'
+    logo-1176: 'Logo / Image'
     logo-5561: 'Logo / Image'
   menu:
-    menu-1081: Menu
+    menu-8447: Menu
     menu-9072: Menu
     menu-3371: Menu
     menu-2194: Menu
     menu-2197: Menu
   custom:
-    custom-2768: 'Custom HTML'
-  content:
-    system-content-1451: 'Page Content'
+    custom-8073: 'Custom HTML'
+    custom-6676: 'Custom HTML'
+    custom-4035: 'Custom HTML'
+    custom-9319: 'Custom HTML'
+  owlcarousel:
+    owlcarousel-4121: 'Owl Carousel'
   copyright:
     copyright-2568: Copyright
   spacer:
@@ -47,10 +48,9 @@ particles:
     mobile-menu-5724: Mobile-menu
 inherit:
   about:
-    system-messages-2784: system-messages-2770
-    logo-1433: logo-5067
-    menu-1081: menu-3355
-    custom-2768: custom-6122
+    system-messages-5537: system-messages-2770
+    logo-1176: logo-5067
+    menu-8447: menu-3355
     footer: footer
     menu-9072: menu-6699
     menu-3371: menu-3490

@@ -1,13 +1,11 @@
 name: cart
-timestamp: 1513308066
+timestamp: 1516703984
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
   name: fullpage
   timestamp: 1513263333
-positions:
-  breadcrumbs: Breadcrumbs
-  footer: Footer
+positions: {  }
 sections:
   navigation: Navigation
   header: Header
@@ -16,22 +14,42 @@ sections:
   offcanvas: Offcanvas
 particles:
   messages:
-    system-messages-7972: 'System Messages'
+    system-messages-2972: 'System Messages'
   logo:
-    logo-9608: Logo
+    logo-9604: 'Logo / Image'
+    logo-6532: 'Logo / Image'
   menu:
-    menu-6409: Menu
-  position:
-    position-breadcrumbs: Breadcrumbs
-    position-footer: Footer
+    menu-9189: Menu
+    menu-7879: Menu
+    menu-5425: Menu
+    menu-5931: Menu
+    menu-4244: Menu
+  custom:
+    custom-9206: 'Custom HTML'
+    custom-2400: Breadcrumbs
   content:
-    system-content-8099: 'Page Content'
-  copyright:
-    copyright-6470: Copyright
-  spacer:
-    spacer-4468: Spacer
-  branding:
-    branding-5506: Branding
+    system-content-9800: 'Page Content'
   mobile-menu:
     mobile-menu-1404: Mobile-menu
-inherit: {  }
+  copyright:
+    copyright-8180: Copyright
+  spacer:
+    spacer-8224: Spacer
+  social:
+    social-8956: Social
+inherit:
+  about:
+    system-messages-2972: system-messages-2770
+    logo-9604: logo-5067
+    menu-9189: menu-3355
+    custom-2400: custom-3566
+  default:
+    footer: footer
+    menu-7879: menu-1837
+    menu-5425: menu-6570
+    menu-5931: menu-9412
+    menu-4244: menu-3453
+    logo-6532: logo-9571
+    copyright-8180: copyright-1736
+    spacer-8224: spacer-2556
+    social-8956: social-7256

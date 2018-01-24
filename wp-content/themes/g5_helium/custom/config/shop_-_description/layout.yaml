@@ -7,7 +7,7 @@ layout:
   /container-main/:
     -
       -
-        header:
+        'header 50':
           -
             - position-header
         navigation:
@@ -18,6 +18,8 @@ layout:
             - system-messages-9548
         main:
           -
+            - custom-8900
+          -
             - system-content-6156
         footer:
           -
@@ -25,7 +27,7 @@ layout:
             - 'spacer-4575 30'
             - 'branding-8622 30'
       -
-        aside:
+        'aside 50':
           -
             - position-aside
   offcanvas:
@@ -46,6 +48,14 @@ content:
   position-header:
     attributes:
       key: header
+  custom-8900:
+    title: Breadcrumbs
+    inherit:
+      outline: about
+      particle: custom-3566
+      include:
+        - attributes
+        - block
   position-aside:
     attributes:
       key: aside

@@ -10,6 +10,7 @@
 
 defined('ABSPATH') or die;
 
+
 use Timber\Timber;
 
 /*
@@ -27,3 +28,4 @@ $context['page_head'] = $theme->render('partials/page_head.html.twig', $context)
 $GLOBALS['timberContext'] = $context;
 
 ob_start();
+

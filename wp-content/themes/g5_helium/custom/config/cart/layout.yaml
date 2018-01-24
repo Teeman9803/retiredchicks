@@ -6,23 +6,19 @@ preset:
 layout:
   /navigation/:
     -
-      - system-messages-7972
+      - system-messages-2972
     -
-      - 'logo-9608 15'
-      - 'menu-6409 65'
+      - 'logo-9604 30'
+      - 'menu-9189 70'
+    -
+      - custom-9206
   /header/: {  }
   /main/:
     -
-      - position-breadcrumbs
+      - custom-2400
     -
-      - system-content-8099
-  /footer/:
-    -
-      - position-footer
-    -
-      - 'copyright-6470 40'
-      - 'spacer-4468 30'
-      - 'branding-5506 30'
+      - system-content-9800
+  footer: {  }
   offcanvas:
     -
       - mobile-menu-1404
@@ -31,6 +27,7 @@ structure:
     type: section
     attributes:
       boxed: ''
+      class: ''
   header:
     attributes:
       boxed: ''
@@ -38,12 +35,43 @@ structure:
     attributes:
       boxed: ''
   footer:
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
 content:
-  position-breadcrumbs:
+  system-messages-2972:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: system-messages-2770
+  logo-9604:
+    title: 'Logo / Image'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: logo-5067
+  menu-9189:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-3355
+  custom-9206:
+    title: 'Custom HTML'
     attributes:
-      key: breadcrumbs
-  position-footer:
-    attributes:
-      key: footer
+      html: "<div class=\"tagline\">\n   <h1>Cart</h1>\n</div>"
+  custom-2400:
+    title: Breadcrumbs
+    inherit:
+      outline: about
+      particle: custom-3566
+      include:
+        - attributes
+        - block

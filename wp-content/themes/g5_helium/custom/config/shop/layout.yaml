@@ -22,6 +22,8 @@ layout:
       -
         'main 80':
           -
+            - custom-9193
+          -
             - system-content-2401
   footer: {  }
   offcanvas:
@@ -85,3 +87,12 @@ content:
     attributes:
       enabled: 0
       widget: '{"type":"widget","widget":"woof_widget","title":"WOOF - WooCommerce Products Filter","options":{"widget":{"title":"","additional_text_before":"","redirect":"","woof_start_filtering_btn":"0","ajax_redraw":"0"}}}'
+      key: widget
+  custom-9193:
+    title: Breadcrumbs
+    inherit:
+      outline: about
+      particle: custom-3566
+      include:
+        - attributes
+        - block

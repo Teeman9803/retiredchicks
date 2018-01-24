@@ -1,0 +1,58 @@
+name: gallery
+timestamp: 1516703984
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: fullpage
+  timestamp: 1513263333
+positions: {  }
+sections:
+  navigation: Navigation
+  header: Header
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  custom:
+    custom-9587: Breadcrumbs
+    custom-2329: 'Custom HTML'
+  content:
+    system-content-2608: 'Page Content'
+  mobile-menu:
+    mobile-menu-5698: Mobile-menu
+  messages:
+    system-messages-6563: 'System Messages'
+  logo:
+    logo-5370: 'Logo / Image'
+    logo-1747: 'Logo / Image'
+  menu:
+    menu-7789: Menu
+    menu-9625: Menu
+    menu-1722: Menu
+    menu-2839: Menu
+    menu-2826: Menu
+    menu-6357: Menu
+  copyright:
+    copyright-1644: Copyright
+  spacer:
+    spacer-4849: Spacer
+  social:
+    social-3338: Social
+inherit:
+  about:
+    navigation: navigation
+    custom-9587: custom-3566
+    system-messages-6563: system-messages-2770
+    logo-5370: logo-5067
+    menu-7789: menu-3355
+    custom-2329: custom-6122
+  default:
+    footer: footer
+    menu-1722: menu-1837
+    menu-2839: menu-6570
+    menu-2826: menu-9412
+    menu-6357: menu-3453
+    logo-1747: logo-9571
+    copyright-1644: copyright-1736
+    spacer-4849: spacer-2556
+    social-3338: social-7256

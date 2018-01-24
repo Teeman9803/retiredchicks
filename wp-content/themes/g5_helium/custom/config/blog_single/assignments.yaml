@@ -3,7 +3,36 @@ context:
     is_single: true
 menu: {  }
 language: {  }
-post: {  }
+post:
+  post:
+    95: true
+    238: true
+    419: true
+    240: true
+    1: true
+    415: true
+    116: true
+    126: true
+    320: true
+    119: true
+    121: true
+    101: true
+    111: true
+    97: true
+    350: true
+    99: true
+    403: true
+    405: true
+    407: true
+    427: true
+    401: true
+    150: true
+    425: true
+    449: true
+    114: true
+    245: true
+  shop_webhook:
+    is_singular: true
 taxonomy: {  }
 archive: {  }
 woocommerce: {  }

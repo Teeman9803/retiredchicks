@@ -15,7 +15,7 @@ layout:
   /header/: {  }
   /main/:
     -
-      - position-breadcrumbs
+      - custom-4017
     -
       - system-content-5815
   footer: {  }
@@ -66,10 +66,15 @@ content:
   custom-1705:
     title: 'Custom HTML'
     attributes:
-      html: "<div class=\"tagline\">\n   <h1>What You Rockin in Your Office?</h1>\n</div>"
-  position-breadcrumbs:
-    attributes:
-      key: breadcrumbs
+      html: "<div class=\"tagline\">\n   <h1>What You Rockin in Your Office</h1>\n</div>"
+  custom-4017:
+    title: Breadcrumbs
+    inherit:
+      outline: about
+      particle: custom-3566
+      include:
+        - attributes
+        - block
   system-content-5815:
     block:
       class: single-post

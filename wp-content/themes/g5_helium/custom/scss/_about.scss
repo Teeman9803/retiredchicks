@@ -6,11 +6,11 @@
 
 .about-section {
   .body {
-    margin: 0 auto;
+    //margin: 0 auto;
     font-weight: 600;
     display: block;
     font-style: italic;
-    max-width: 51rem;
+    //max-width: 51rem;
   }
   .g-wordpress-posts .g-array-item {
     margin: 0 auto;
@@ -47,10 +47,6 @@
 
 }
 
-.partners-section .body {
-  max-width: 51rem;
-  margin: 1rem auto 2rem;
-}
 
 #g-testimonials {
   background-position: center center;
@@ -70,6 +66,21 @@
       color: #fff !important;
       font-weight: 600;
     }
+  }
+}
+
+.initiative-posts .g-grid {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  &.show {
+    opacity: 1;
+    height: auto;
+  }
+  .g-array-item-text {
+    margin-top: 0;
   }
 }
 

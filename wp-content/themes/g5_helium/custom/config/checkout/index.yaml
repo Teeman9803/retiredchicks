@@ -1,0 +1,58 @@
+name: checkout
+timestamp: 1516703984
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: fullpage
+  timestamp: 1513263333
+positions: {  }
+sections:
+  navigation: Navigation
+  header: Header
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  custom:
+    custom-5765: Breadcrumbs
+    custom-2578: 'Custom HTML'
+  content:
+    system-content-1258: 'Page Content'
+  mobile-menu:
+    mobile-menu-1876: Mobile-menu
+  messages:
+    system-messages-7792: 'System Messages'
+  logo:
+    logo-6558: 'Logo / Image'
+    logo-7446: 'Logo / Image'
+  menu:
+    menu-8116: Menu
+    menu-9764: Menu
+    menu-8165: Menu
+    menu-9458: Menu
+    menu-5286: Menu
+    menu-6296: Menu
+  copyright:
+    copyright-9458: Copyright
+  spacer:
+    spacer-1268: Spacer
+  social:
+    social-4137: Social
+inherit:
+  about:
+    navigation: navigation
+    custom-5765: custom-3566
+    system-messages-7792: system-messages-2770
+    logo-6558: logo-5067
+    menu-8116: menu-3355
+    custom-2578: custom-6122
+  default:
+    footer: footer
+    menu-8165: menu-1837
+    menu-9458: menu-6570
+    menu-5286: menu-9412
+    menu-6296: menu-3453
+    logo-7446: logo-9571
+    copyright-9458: copyright-1736
+    spacer-1268: spacer-2556
+    social-4137: social-7256

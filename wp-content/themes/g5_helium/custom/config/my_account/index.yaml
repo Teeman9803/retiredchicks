@@ -1,0 +1,58 @@
+name: my_account
+timestamp: 1516703984
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: fullpage
+  timestamp: 1513263333
+positions: {  }
+sections:
+  navigation: Navigation
+  header: Header
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  custom:
+    custom-6296: Breadcrumbs
+    custom-5133: 'Custom HTML'
+  content:
+    system-content-9283: 'Page Content'
+  mobile-menu:
+    mobile-menu-7513: Mobile-menu
+  messages:
+    system-messages-7375: 'System Messages'
+  logo:
+    logo-3294: 'Logo / Image'
+    logo-9627: 'Logo / Image'
+  menu:
+    menu-8283: Menu
+    menu-7029: Menu
+    menu-9712: Menu
+    menu-3989: Menu
+    menu-5221: Menu
+    menu-3799: Menu
+  copyright:
+    copyright-7460: Copyright
+  spacer:
+    spacer-4126: Spacer
+  social:
+    social-4903: Social
+inherit:
+  about:
+    navigation: navigation
+    custom-6296: custom-3566
+    system-messages-7375: system-messages-2770
+    logo-3294: logo-5067
+    menu-8283: menu-3355
+    custom-5133: custom-6122
+  default:
+    footer: footer
+    menu-9712: menu-1837
+    menu-3989: menu-6570
+    menu-5221: menu-9412
+    menu-3799: menu-3453
+    logo-9627: logo-9571
+    copyright-7460: copyright-1736
+    spacer-4126: spacer-2556
+    social-4903: social-7256

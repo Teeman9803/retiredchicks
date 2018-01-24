@@ -4,11 +4,11 @@ preset:
   name: fullpage
   timestamp: 1513263333
 layout:
-  /navigation/: {  }
-  header: {  }
+  navigation: {  }
+  /header/: {  }
   /main/:
     -
-      - position-breadcrumbs
+      - custom-5867
     -
       - system-content-9974
   footer: {  }
@@ -18,14 +18,15 @@ layout:
 structure:
   navigation:
     type: section
-    attributes:
-      boxed: ''
-  header:
     inherit:
-      outline: blog
+      outline: about
       include:
         - attributes
         - children
+  header:
+    attributes:
+      boxed: '2'
+      class: ''
   main:
     attributes:
       boxed: ''
@@ -36,6 +37,11 @@ structure:
         - attributes
         - children
 content:
-  position-breadcrumbs:
-    attributes:
-      key: breadcrumbs
+  custom-5867:
+    title: Breadcrumbs
+    inherit:
+      outline: about
+      particle: custom-3566
+      include:
+        - attributes
+        - block

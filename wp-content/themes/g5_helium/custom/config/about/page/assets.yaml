@@ -1,0 +1,10 @@
+javascript:
+  -
+    location: 'gantry-assets://js/scripts.js'
+    inline: ''
+    in_footer: '1'
+    extra: {  }
+    priority: '0'
+    name: Script
+  -
+    name: 'New item'

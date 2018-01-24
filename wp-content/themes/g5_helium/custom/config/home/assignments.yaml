@@ -1,6 +1,7 @@
 context:
   -
     is_front_page: true
+    is_home: true
 menu: {  }
 language: {  }
 post: {  }

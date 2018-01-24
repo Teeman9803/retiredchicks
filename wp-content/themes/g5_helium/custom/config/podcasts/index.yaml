@@ -1,5 +1,5 @@
 name: podcasts
-timestamp: 1515932401
+timestamp: 1516703984
 version: 7
 preset:
   image: 'gantry-media://images/admin/layouts/2-col-right.png'
@@ -27,6 +27,8 @@ particles:
     menu-9926: Menu
   custom:
     custom-9174: 'Custom HTML'
+    custom-9710: Breadcrumbs
+    custom-5085: 'Custom HTML'
   content:
     system-content-1440: 'Page Content'
   mobile-menu:
@@ -42,6 +44,7 @@ inherit:
     system-messages-2222: system-messages-2770
     logo-6127: logo-5067
     menu-7613: menu-3355
+    custom-9710: custom-3566
     footer: footer
     menu-8563: menu-6699
     menu-4750: menu-3490

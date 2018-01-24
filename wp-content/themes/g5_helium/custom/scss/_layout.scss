@@ -1,0 +1,81 @@
+[class^="slab-"][class$='-section'] .g-container {
+  max-width: $body-width;
+  margin: 3rem auto;
+}
+
+/** Content Slabs **/
+
+@each $position in $positions {
+  .slab-#{nth($position, 1)} {
+    text-align: nth($position, 2);
+  }
+}
+
+[class*="slab-"] {
+  .g-content {
+    padding: 0;
+  }
+  .title, [class*='-title'] {
+    letter-spacing: 1px;
+    font-weight: 600;
+    &.header {
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
+}
+
+/** Flex Rows */
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/** Feature Posts **/
+.feature-large {
+  .post-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .thumbnail-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .title, .title a {
+    color: inherit;
+    max-width: 30rem;
+    font-weight: 800;
+    font-size: 2.8rem;
+  }
+  .date {
+    color: #fff;
+  }
+  .tag {
+    color: #fff;
+  }
+}
+
+/*** Header ***/
+
+#g-header {
+  a {
+    color: #fff;
+  }
+
+  h2 {
+    font-weight: 400;
+    line-height: 1.5;
+    width: 51rem;
+  }
+}
+
+#g-mainbar {
+  padding: 0;
+}
+
+#g-testimonials a {
+  color: #fff;
+}

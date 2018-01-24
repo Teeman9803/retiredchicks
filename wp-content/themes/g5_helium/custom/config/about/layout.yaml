@@ -152,12 +152,11 @@ content:
       svg: ''
       class: avatar-md
   custom-3566:
-    title: 'Custom HTML'
+    title: Breadcrumbs
     attributes:
-      enabled: 0
-      html: "<div>\n<div class=\"tag\">The CEO</div>\n<h2 class=\"title\">Tamara McCutcheon</h2>\n<q class=\"body\">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Donec rutrum congue leo eget malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Donec sollicitudin molestie malesuada. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</q>\n</div>"
+      html: '[flexy_breadcrumb]'
       twig: '0'
-      filter: '0'
+      filter: '1'
   featurepost-6562:
     title: 'Feature Post'
     attributes:
@@ -264,7 +263,7 @@ content:
     attributes:
       post:
         filter:
-          categories: ''
+          categories: '57'
           posts: ''
           sticky: ''
         limit:
@@ -318,8 +317,7 @@ content:
   custom-2018:
     title: 'Custom HTML'
     attributes:
-      enabled: 0
-      html: '<h3 class="title">Our Initiatives</h3>'
+      html: '<h3 class="title header">Our Initiatives</h3>'
       twig: '0'
       filter: '0'
   menu-9529:
@@ -338,7 +336,7 @@ content:
           posts: ''
           sticky: ''
         limit:
-          total: '1'
+          total: '2'
           columns: '1'
           start: '0'
         sort:
@@ -362,7 +360,10 @@ content:
           comments:
             enabled: ''
           text:
+            type: content
             formatting: html
+      css:
+        class: initiative-posts
   menu-6699:
     attributes:
       menu: footer-sections

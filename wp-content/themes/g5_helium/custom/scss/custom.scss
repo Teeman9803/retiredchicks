@@ -1,12 +1,15 @@
 @import "dependencies";
 @import "variables";
-@import "core";
 @import "mixins";
+@import "core";
+@import "nav";
+@import "layout";
 @import "buttons";
 @import "carousel";
-@import "nav";
 @import "badges";
+@import "home";
 @import "about";
 @import "blog";
+@import "products";
 @include import-font('montserrat');
 
