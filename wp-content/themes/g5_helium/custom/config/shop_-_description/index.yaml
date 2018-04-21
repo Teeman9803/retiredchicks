@@ -1,5 +1,5 @@
 name: shop_-_description
-timestamp: 1516703984
+timestamp: 1517578418
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/2-col-right.png'
@@ -22,6 +22,7 @@ particles:
     position-aside: Aside
   menu:
     menu-8139: Menu
+    menu-1144: Menu
   messages:
     system-messages-9548: 'System Messages'
   custom:

@@ -1,5 +1,5 @@
 name: podcasts
-timestamp: 1516703984
+timestamp: 1517578417
 version: 7
 preset:
   image: 'gantry-media://images/admin/layouts/2-col-right.png'
@@ -14,25 +14,26 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  messages:
-    system-messages-2222: 'System Messages'
-  logo:
-    logo-6127: 'Logo / Image'
-    logo-6303: 'Logo / Image'
-  menu:
-    menu-7613: Menu
-    menu-8563: Menu
-    menu-4750: Menu
-    menu-7028: Menu
-    menu-9926: Menu
   custom:
-    custom-9174: 'Custom HTML'
     custom-9710: Breadcrumbs
     custom-5085: 'Custom HTML'
+    custom-6210: 'Custom HTML'
   content:
     system-content-1440: 'Page Content'
   mobile-menu:
     mobile-menu-6798: Mobile-menu
+  messages:
+    system-messages-5700: 'System Messages'
+  logo:
+    logo-9318: 'Logo / Image'
+    logo-6303: 'Logo / Image'
+  menu:
+    menu-7214: Menu
+    menu-5839: Menu
+    menu-8563: Menu
+    menu-4750: Menu
+    menu-7028: Menu
+    menu-9926: Menu
   copyright:
     copyright-7865: Copyright
   spacer:
@@ -41,11 +42,14 @@ particles:
     social-6979: Social
 inherit:
   about:
-    system-messages-2222: system-messages-2770
-    logo-6127: logo-5067
-    menu-7613: menu-3355
+    navigation: navigation
     custom-9710: custom-3566
     footer: footer
+    system-messages-5700: system-messages-2770
+    logo-9318: logo-5067
+    menu-7214: menu-2524
+    menu-5839: menu-5767
+    custom-6210: custom-6122
     menu-8563: menu-6699
     menu-4750: menu-3490
     menu-7028: menu-8016

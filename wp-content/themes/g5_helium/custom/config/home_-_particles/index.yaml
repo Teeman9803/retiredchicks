@@ -1,5 +1,5 @@
 name: home_-_particles
-timestamp: 1515239688
+timestamp: 1517578059
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -57,7 +57,6 @@ inherit:
     offcanvas: offcanvas
     system-messages-3810: system-messages-7972
     logo-9656: logo-9608
-    menu-5340: menu-6409
     menu-9182: menu-1837
     menu-6644: menu-6570
     menu-3058: menu-9412

@@ -4,8 +4,16 @@ preset:
   name: fullpage
   timestamp: 1513263333
 layout:
-  /navigation/: {  }
-  header: {  }
+  /navigation/:
+    -
+      - system-messages-3558
+    -
+      - 'logo-8140 25'
+      - 'menu-8110 50'
+      - 'menu-6140 25'
+    -
+      - custom-5503
+  /header/: {  }
   /main/:
     -
       - custom-7029
@@ -20,12 +28,11 @@ structure:
     type: section
     attributes:
       boxed: ''
+      class: ''
   header:
-    inherit:
-      outline: blog
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: '2'
+      class: ''
   main:
     attributes:
       boxed: ''
@@ -36,6 +43,39 @@ structure:
         - attributes
         - children
 content:
+  system-messages-3558:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: system-messages-2770
+  logo-8140:
+    title: 'Logo / Image'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: logo-5067
+  menu-8110:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-2524
+  menu-6140:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-5767
+  custom-5503:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"tagline\">\n   <h1>Shipping Information</h1>\n</div>"
   custom-7029:
     title: Breadcrumbs
     inherit:

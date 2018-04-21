@@ -1,2 +1,18 @@
 2018-01-15T21:52:10+00:00 CRITICAL Method Timber\FunctionWrapper::__toString() must not throw an exception, caught ArgumentCountError: Too few arguments to function Grid_Plus_Base::gf_enqueue_custom_css(), 1 passed in /Applications/MAMP/htdocs/retiredchicks/wp-includes/class-wp-hook.php on line 286 and exactly 2 expected
 
+2018-01-29T10:21:11+00:00 CRITICAL Uncaught Leafo\ScssPhp\Exception\ParserException: unexpected }: failed at `footer {` gantry-theme://scss/_nav.scss on line 131 in /Applications/MAMP/htdocs/retiredchicks/wp-content/plugins/gantry5/src/vendor/leafo/scssphp/src/Parser.php:128
+Stack trace:
+#0 /Applications/MAMP/htdocs/retiredchicks/wp-content/plugins/gantry5/src/vendor/leafo/scssphp/src/Parser.php(762): Leafo\ScssPhp\Parser->throwParseError('unexpected }')
+#1 /Applications/MAMP/htdocs/retiredchicks/wp-content/plugins/gantry5/src/vendor/leafo/scssphp/src/Parser.php(673): Leafo\ScssPhp\Parser->popBlock()
+#2 /Applications/MAMP/htdocs/retiredchicks/wp-content/plugins/gantry5/src/vendor/leafo/scssphp/src/Parser.php(164): Leafo\ScssPhp\Parser->parseChunk()
+#3 /Applications/MAMP/htdocs/retiredchicks/wp-content/plugins/gantry5/src/classes/Gantry/Component/Stylesheet/Scss/Compiler.php(404): Leafo\ScssPhp\Parser->parse('#g-navigation {...')
+#4 /Applications/MAMP/htdocs/retiredchicks/wp-content/plugins/gantry5/src/vendor/leafo/scssphp/src/Compiler.php(1480
+
+2018-01-29T10:21:52+00:00 CRITICAL Uncaught Leafo\ScssPhp\Exception\ParserException: unexpected }: failed at `footer {` gantry-theme://scss/_nav.scss on line 131 in /Applications/MAMP/htdocs/retiredchicks/wp-content/plugins/gantry5/src/vendor/leafo/scssphp/src/Parser.php:128
+Stack trace:
+#0 /Applications/MAMP/htdocs/retiredchicks/wp-content/plugins/gantry5/src/vendor/leafo/scssphp/src/Parser.php(762): Leafo\ScssPhp\Parser->throwParseError('unexpected }')
+#1 /Applications/MAMP/htdocs/retiredchicks/wp-content/plugins/gantry5/src/vendor/leafo/scssphp/src/Parser.php(673): Leafo\ScssPhp\Parser->popBlock()
+#2 /Applications/MAMP/htdocs/retiredchicks/wp-content/plugins/gantry5/src/vendor/leafo/scssphp/src/Parser.php(164): Leafo\ScssPhp\Parser->parseChunk()
+#3 /Applications/MAMP/htdocs/retiredchicks/wp-content/plugins/gantry5/src/classes/Gantry/Component/Stylesheet/Scss/Compiler.php(404): Leafo\ScssPhp\Parser->parse('#g-navigation {...')
+#4 /Applications/MAMP/htdocs/retiredchicks/wp-content/plugins/gantry5/src/vendor/leafo/scssphp/src/Compiler.php(1480
+

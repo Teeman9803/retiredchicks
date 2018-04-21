@@ -1,5 +1,5 @@
 name: podcast_single
-timestamp: 1516703984
+timestamp: 1517578417
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -26,8 +26,8 @@ particles:
     logo-9875: 'Logo / Image'
     logo-4513: 'Logo / Image'
   menu:
-    menu-3520: Menu
-    menu-3147: Menu
+    menu-5664: Menu
+    menu-2149: Menu
     menu-2714: Menu
     menu-6645: Menu
     menu-7561: Menu
@@ -44,7 +44,8 @@ inherit:
     custom-5865: custom-3566
     system-messages-8549: system-messages-2770
     logo-9875: logo-5067
-    menu-3520: menu-3355
+    menu-5664: menu-2524
+    menu-2149: menu-5767
     custom-8716: custom-6122
   default:
     footer: footer

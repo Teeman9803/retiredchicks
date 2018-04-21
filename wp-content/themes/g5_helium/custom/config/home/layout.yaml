@@ -8,11 +8,12 @@ layout:
     -
       - system-messages-5537
     -
-      - 'logo-1176 30'
-      - 'menu-8447 70'
-    -
-      - custom-8073
+      - 'logo-1176 25'
+      - 'menu-8447 50'
+      - 'menu-2768 25'
   /header/:
+    -
+      - custom-4448
     -
       - owlcarousel-4121
   /intro/: {  }
@@ -81,7 +82,7 @@ structure:
   container-main:
     attributes:
       boxed: ''
-      class: 'home-section g-flushed'
+      class: home-section
       extra: {  }
   footer:
     inherit:
@@ -114,19 +115,25 @@ content:
   menu-8447:
     inherit:
       outline: about
+      particle: menu-2524
       include:
         - attributes
         - block
-      particle: menu-3355
-  custom-8073:
+  menu-2768:
+    inherit:
+      outline: about
+      particle: menu-5767
+      include:
+        - attributes
+        - block
+  custom-4448:
     title: 'Custom HTML'
     attributes:
-      enabled: 0
-      html: '[owl-carousel]'
-      filter: '1'
+      html: '<div class="loader"></div>'
   owlcarousel-4121:
     title: 'Owl Carousel'
     attributes:
+      class: ''
       dots: enable
       autoplay: enable
       autoplaySpeed: ''

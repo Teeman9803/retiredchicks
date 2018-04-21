@@ -4,14 +4,7 @@ preset:
   name: 2-col-left
   timestamp: 1513308258
 layout:
-  navigation:
-    -
-      - system-messages-8435
-    -
-      - 'logo-3375 30'
-      - 'menu-6896 70'
-    -
-      - custom-8780
+  navigation: {  }
   /header/: {  }
   /container-main/:
     -
@@ -36,6 +29,7 @@ structure:
       outline: about
       include:
         - attributes
+        - children
   header:
     attributes:
       boxed: '0'
@@ -57,32 +51,6 @@ structure:
         - attributes
         - children
 content:
-  system-messages-8435:
-    inherit:
-      outline: about
-      include:
-        - attributes
-        - block
-      particle: system-messages-2770
-  logo-3375:
-    title: 'Logo / Image'
-    inherit:
-      outline: about
-      include:
-        - attributes
-        - block
-      particle: logo-5067
-  menu-6896:
-    inherit:
-      outline: about
-      include:
-        - attributes
-        - block
-      particle: menu-3355
-  custom-8780:
-    title: 'Custom HTML'
-    attributes:
-      html: "<div class=\"tagline\">\n   <div class=\"tag\">Shop</div>\n   <h1>Get RC Gear</h1>\n</div>"
   position-widget-8211:
     attributes:
       enabled: 0

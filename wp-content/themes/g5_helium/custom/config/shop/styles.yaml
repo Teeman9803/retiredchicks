@@ -4,3 +4,5 @@ base:
 header:
   background-image: 'gantry-media://2017/12/pexels-photo-247287.jpeg'
   background-overlay: enabled
+footer:
+  background: '#2a2a2a'

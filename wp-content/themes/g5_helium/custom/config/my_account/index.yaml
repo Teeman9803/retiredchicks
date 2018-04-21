@@ -1,5 +1,5 @@
 name: my_account
-timestamp: 1516703984
+timestamp: 1517670904
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -13,39 +13,38 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  custom:
-    custom-6296: Breadcrumbs
-    custom-5133: 'Custom HTML'
-  content:
-    system-content-9283: 'Page Content'
-  mobile-menu:
-    mobile-menu-7513: Mobile-menu
   messages:
     system-messages-7375: 'System Messages'
   logo:
     logo-3294: 'Logo / Image'
     logo-9627: 'Logo / Image'
   menu:
-    menu-8283: Menu
-    menu-7029: Menu
+    menu-4311: Menu
+    menu-1634: Menu
     menu-9712: Menu
     menu-3989: Menu
     menu-5221: Menu
     menu-3799: Menu
+  custom:
+    custom-5133: 'Custom HTML'
+    custom-6296: Breadcrumbs
+  content:
+    system-content-9283: 'Page Content'
   copyright:
     copyright-7460: Copyright
   spacer:
     spacer-4126: Spacer
   social:
     social-4903: Social
+  mobile-menu:
+    mobile-menu-7513: Mobile-menu
 inherit:
   about:
-    navigation: navigation
-    custom-6296: custom-3566
     system-messages-7375: system-messages-2770
     logo-3294: logo-5067
-    menu-8283: menu-3355
-    custom-5133: custom-6122
+    menu-4311: menu-2524
+    menu-1634: menu-5767
+    custom-6296: custom-3566
   default:
     footer: footer
     menu-9712: menu-1837

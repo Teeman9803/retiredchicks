@@ -8,8 +8,9 @@ layout:
     -
       - system-messages-3064
     -
-      - 'logo-7607 30'
-      - 'menu-1609 70'
+      - 'logo-7607 25'
+      - 'menu-1609 50'
+      - 'menu-8000 25'
     -
       - custom-6564
   /header/: {  }
@@ -41,7 +42,7 @@ structure:
       class: ''
   main:
     attributes:
-      class: blog-section
+      class: ''
   sidebar:
     type: section
     subtype: aside
@@ -50,6 +51,8 @@ structure:
   container-main:
     attributes:
       boxed: ''
+      class: blog-section
+      extra: {  }
   footer:
     inherit:
       outline: default
@@ -64,9 +67,17 @@ content:
       svg: ''
   menu-1609:
     attributes:
-      menu: mainmenu
+      menu: primary-menu
       base: /
       mobileTarget: '1'
+    block:
+      class: center
+  menu-8000:
+    attributes:
+      menu: user-menu
+      mobileTarget: '1'
+    block:
+      class: menu-right
   custom-6564:
     title: 'Custom HTML'
     attributes:

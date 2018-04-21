@@ -4,14 +4,7 @@ preset:
   name: 2-col-right
   timestamp: 1513307866
 layout:
-  /navigation/:
-    -
-      - system-messages-2222
-    -
-      - 'logo-6127 30'
-      - 'menu-7613 70'
-    -
-      - custom-9174
+  navigation: {  }
   /header/: {  }
   /container-main/:
     -
@@ -32,16 +25,18 @@ layout:
 structure:
   navigation:
     type: section
-    attributes:
-      boxed: ''
-      class: ''
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - children
   header:
     attributes:
       boxed: ''
       class: ''
   main:
     attributes:
-      class: podcast-section
+      class: ''
   sidebar:
     type: section
     subtype: aside
@@ -52,6 +47,8 @@ structure:
   container-main:
     attributes:
       boxed: ''
+      class: podcast-section
+      extra: {  }
   footer:
     inherit:
       outline: about
@@ -59,32 +56,6 @@ structure:
         - attributes
         - children
 content:
-  system-messages-2222:
-    inherit:
-      outline: about
-      include:
-        - attributes
-        - block
-      particle: system-messages-2770
-  logo-6127:
-    title: 'Logo / Image'
-    inherit:
-      outline: about
-      include:
-        - attributes
-        - block
-      particle: logo-5067
-  menu-7613:
-    inherit:
-      outline: about
-      include:
-        - attributes
-        - block
-      particle: menu-3355
-  custom-9174:
-    title: 'Custom HTML'
-    attributes:
-      html: "<div class=\"tagline\">\n   <div class=\"tag\">Podcast</div>\n   <h1>Listen Now</h1>\n</div>"
   custom-9710:
     title: Breadcrumbs
     inherit:

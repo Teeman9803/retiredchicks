@@ -1,3 +1,5 @@
 preset: preset6
 base:
   background: '#ffffff'
+footer:
+  background: '#2a2a2a'

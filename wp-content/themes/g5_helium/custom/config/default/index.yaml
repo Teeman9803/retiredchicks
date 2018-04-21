@@ -1,5 +1,5 @@
 name: default
-timestamp: 1515932401
+timestamp: 1517578059
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -28,12 +28,6 @@ particles:
   logo:
     logo-9608: 'Logo / Image'
     logo-9571: 'Logo / Image'
-  menu:
-    menu-6409: Menu
-    menu-1837: Menu
-    menu-6570: Menu
-    menu-9412: Menu
-    menu-3453: Menu
   owlcarousel:
     owlcarousel-7144: 'Owl Carousel'
   totop:
@@ -43,6 +37,11 @@ particles:
     position-position-3949: Sidebar
   content:
     system-content-1587: 'Page Content'
+  menu:
+    menu-1837: Menu
+    menu-6570: Menu
+    menu-9412: Menu
+    menu-3453: Menu
   copyright:
     copyright-1736: Copyright
   spacer:

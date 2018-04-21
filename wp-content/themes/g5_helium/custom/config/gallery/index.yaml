@@ -1,5 +1,5 @@
 name: gallery
-timestamp: 1516703984
+timestamp: 1517578417
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -26,8 +26,8 @@ particles:
     logo-5370: 'Logo / Image'
     logo-1747: 'Logo / Image'
   menu:
-    menu-7789: Menu
-    menu-9625: Menu
+    menu-2052: Menu
+    menu-8977: Menu
     menu-1722: Menu
     menu-2839: Menu
     menu-2826: Menu
@@ -44,7 +44,8 @@ inherit:
     custom-9587: custom-3566
     system-messages-6563: system-messages-2770
     logo-5370: logo-5067
-    menu-7789: menu-3355
+    menu-2052: menu-2524
+    menu-8977: menu-5767
     custom-2329: custom-6122
   default:
     footer: footer

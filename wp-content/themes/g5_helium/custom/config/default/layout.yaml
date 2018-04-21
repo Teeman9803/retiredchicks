@@ -8,8 +8,7 @@ layout:
     -
       - system-messages-7972
     -
-      - 'logo-9608 25'
-      - 'menu-6409 75'
+      - logo-9608
   /header/:
     -
       - owlcarousel-7144
@@ -118,12 +117,6 @@ content:
       svg: ''
       text: ''
       class: ''
-  menu-6409:
-    attributes:
-      menu: mainmenu
-      base: /
-      hoverExpand: '1'
-      mobileTarget: '0'
   owlcarousel-7144:
     title: 'Owl Carousel'
     attributes:

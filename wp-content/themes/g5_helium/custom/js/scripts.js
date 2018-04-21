@@ -26,9 +26,12 @@
 	$('.initiatives-section .g-menu-item:first a').trigger('click');
 
 
+	$('.account-section .nav li:first a').trigger('click');
+
+
 	setTimeout(function() {
 
-	$('.grid-stack-item').each(function(idx, value) {
+	$('.shop-section .grid-stack-item').each(function(idx, value) {
 		if ( $(value).height() < 170 ) {
 			$(value).addClass('small');
 		}

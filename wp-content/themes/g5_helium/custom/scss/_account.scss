@@ -1,0 +1,58 @@
+.pure-form input.pure-input-rounded, .pure-form .pure-input-rounded {
+  border-radius: 3px;
+}
+
+.pure-form-stacked input[type=text], .pure-form-stacked input[type=password], .pure-form-stacked input[type=email], .pure-form-stacked input[type=url], .pure-form-stacked input[type=date], .pure-form-stacked input[type=month], .pure-form-stacked input[type=time], .pure-form-stacked input[type=datetime], .pure-form-stacked input[type=datetime-local], .pure-form-stacked input[type=week], .pure-form-stacked input[type=number], .pure-form-stacked input[type=search], .pure-form-stacked input[type=tel], .pure-form-stacked input[type=color], .pure-form-stacked input[type=file], .pure-form-stacked select, .pure-form-stacked label, .pure-form-stacked textarea {
+  width: 100%;
+}
+
+form.pure-form.pure-form-stacked,
+.woocommerce form.checkout_coupon,
+.woocommerce form.login,
+.woocommerce form.register {
+  margin: 3rem auto 3rem;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 6px;
+  border: 1px solid #dedede;
+}
+
+
+.account-section {
+  .post-type-page .entry-header,
+  .post-type-page .entry-content > p {
+    text-align: center;
+  }
+}
+
+
+.post-type-page .entry-header{
+  display: none;
+}
+
+button.pure-button.pure-button-primary {
+  @include button($base-color);
+  @extend .button.small;
+}
+
+#customer_login {
+  position: relative;
+  width: 31rem;
+  margin: 0 auto;
+  height: 800px;
+  h2 {
+    text-align: center;
+    font-weight: 800;
+    color: #2a2a2a;
+  }
+}
+
+.woocommerce .col2-set .col-1,
+.woocommerce-page .col2-set .col-1,
+.woocommerce .col2-set .col-2,
+.woocommerce-page .col2-set .col-2 {
+  float: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}

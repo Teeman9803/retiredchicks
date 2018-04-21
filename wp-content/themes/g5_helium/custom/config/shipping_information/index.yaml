@@ -1,5 +1,5 @@
 name: shipping_information
-timestamp: 1516703984
+timestamp: 1517670692
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -13,29 +13,37 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  custom:
-    custom-7029: Breadcrumbs
-  content:
-    system-content-3083: 'Page Content'
-  mobile-menu:
-    mobile-menu-8672: Mobile-menu
+  messages:
+    system-messages-3558: 'System Messages'
+  logo:
+    logo-8140: 'Logo / Image'
+    logo-7540: 'Logo / Image'
   menu:
+    menu-8110: Menu
+    menu-6140: Menu
     menu-2992: Menu
     menu-1998: Menu
     menu-3193: Menu
     menu-8949: Menu
-  logo:
-    logo-7540: 'Logo / Image'
+  custom:
+    custom-5503: 'Custom HTML'
+    custom-7029: Breadcrumbs
+  content:
+    system-content-3083: 'Page Content'
   copyright:
     copyright-2099: Copyright
   spacer:
     spacer-7460: Spacer
   social:
     social-9069: Social
+  mobile-menu:
+    mobile-menu-8672: Mobile-menu
 inherit:
-  blog:
-    header: header
   about:
+    system-messages-3558: system-messages-2770
+    logo-8140: logo-5067
+    menu-8110: menu-2524
+    menu-6140: menu-5767
     custom-7029: custom-3566
   default:
     footer: footer

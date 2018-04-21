@@ -1,5 +1,5 @@
 name: blog
-timestamp: 1516703984
+timestamp: 1517578894
 version: 7
 preset:
   image: 'gantry-media://images/admin/layouts/2-col-right.png'
@@ -21,6 +21,7 @@ particles:
     logo-4355: 'Logo / Image'
   menu:
     menu-1609: Menu
+    menu-8000: Menu
     menu-5480: Menu
     menu-8406: Menu
     menu-1533: Menu
@@ -31,14 +32,14 @@ particles:
     custom-5667: 'Custom HTML'
   contentarray:
     contentarray-5790: 'WordPress Posts'
-  mobile-menu:
-    mobile-menu-1349: Mobile-menu
   copyright:
     copyright-1747: Copyright
   spacer:
     spacer-3794: Spacer
   social:
     social-7655: Social
+  mobile-menu:
+    mobile-menu-1349: Mobile-menu
 inherit:
   about:
     custom-4257: custom-3566

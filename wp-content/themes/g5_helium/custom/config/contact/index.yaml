@@ -1,5 +1,5 @@
 name: contact
-timestamp: 1516703984
+timestamp: 1517670990
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -13,39 +13,38 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  custom:
-    custom-2493: Breadcrumbs
-    custom-3048: 'Custom HTML'
-  content:
-    system-content-3388: 'Page Content'
-  mobile-menu:
-    mobile-menu-6894: Mobile-menu
   messages:
     system-messages-3748: 'System Messages'
   logo:
     logo-1465: 'Logo / Image'
     logo-4694: 'Logo / Image'
   menu:
-    menu-6127: Menu
-    menu-9885: Menu
+    menu-5925: Menu
+    menu-1244: Menu
     menu-9275: Menu
     menu-2128: Menu
     menu-9777: Menu
     menu-9426: Menu
+  custom:
+    custom-3048: 'Custom HTML'
+    custom-2493: Breadcrumbs
+  content:
+    system-content-3388: 'Page Content'
   copyright:
     copyright-2935: Copyright
   spacer:
     spacer-1754: Spacer
   social:
     social-1046: Social
+  mobile-menu:
+    mobile-menu-6894: Mobile-menu
 inherit:
   about:
-    navigation: navigation
-    custom-2493: custom-3566
     system-messages-3748: system-messages-2770
     logo-1465: logo-5067
-    menu-6127: menu-3355
-    custom-3048: custom-6122
+    menu-5925: menu-2524
+    menu-1244: menu-5767
+    custom-2493: custom-3566
   default:
     footer: footer
     menu-9275: menu-1837

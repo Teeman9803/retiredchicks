@@ -1,5 +1,5 @@
 name: about
-timestamp: 1516703984
+timestamp: 1517578418
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -28,7 +28,8 @@ particles:
     logo-5980: 'Logo / Image'
     logo-2980: 'Logo / Image'
   menu:
-    menu-3355: Menu
+    menu-2524: Menu
+    menu-5767: Menu
     menu-9529: Menu
     menu-6699: Menu
     menu-3490: Menu

@@ -4,7 +4,15 @@ preset:
   name: fullpage
   timestamp: 1513263333
 layout:
-  navigation: {  }
+  /navigation/:
+    -
+      - system-messages-7375
+    -
+      - 'logo-3294 25'
+      - 'menu-4311 50'
+      - 'menu-1634 25'
+    -
+      - custom-5133
   /header/: {  }
   /main/:
     -
@@ -18,17 +26,16 @@ layout:
 structure:
   navigation:
     type: section
-    inherit:
-      outline: about
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: ''
+      class: ''
   header:
     attributes:
       boxed: ''
   main:
     attributes:
       boxed: ''
+      class: account-section
   footer:
     inherit:
       outline: default
@@ -36,6 +43,39 @@ structure:
         - attributes
         - children
 content:
+  system-messages-7375:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: system-messages-2770
+  logo-3294:
+    title: 'Logo / Image'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: logo-5067
+  menu-4311:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-2524
+  menu-1634:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-5767
+  custom-5133:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"tagline\">\n   <h1>Account</h1>\n</div>"
   custom-6296:
     title: Breadcrumbs
     inherit:
@@ -44,3 +84,6 @@ content:
       include:
         - attributes
         - block
+  system-content-9283:
+    block:
+      class: 'menu menu-vertical'

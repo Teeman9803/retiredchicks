@@ -12,7 +12,8 @@ layout:
             - position-header
         navigation:
           -
-            - menu-8139
+            - 'menu-8139 75'
+            - 'menu-1144 25'
         messages:
           -
             - system-messages-9548
@@ -48,6 +49,15 @@ content:
   position-header:
     attributes:
       key: header
+  menu-8139:
+    block:
+      class: center
+  menu-1144:
+    attributes:
+      menu: user-menu
+      mobileTarget: '1'
+    block:
+      class: menu-right
   custom-8900:
     title: Breadcrumbs
     inherit:

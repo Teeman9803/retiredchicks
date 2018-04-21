@@ -1,12 +1,11 @@
 name: initiatives
-timestamp: 1516703984
+timestamp: 1517669129
 version: 7
 preset:
   image: 'gantry-media://images/admin/layouts/2-col-left.png'
   name: 2-col-left
   timestamp: 1513307855
-positions:
-  footer: Footer
+positions: {  }
 sections:
   navigation: Navigation
   header: Header
@@ -15,39 +14,53 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
+  messages:
+    system-messages-4129: 'System Messages'
+  logo:
+    logo-4941: 'Logo / Image'
+    logo-7749: 'Logo / Image'
   menu:
-    menu-4581: Menu
     menu-7848: Menu
+    menu-7484: Menu
+    menu-4581: Menu
+    menu-9266: Menu
+    menu-4422: Menu
+    menu-8553: Menu
+    menu-7012: Menu
   custom:
-    custom-8152: Breadcrumbs
     custom-4848: 'Custom HTML'
+    custom-8152: Breadcrumbs
   content:
     system-content-4937: 'Page Content'
   widget:
     position-widget-7034: Widget
   social:
     social-3179: Social
-  position:
-    position-footer: Footer
+    social-8451: Social
   copyright:
-    copyright-6344: Copyright
+    copyright-4682: Copyright
   spacer:
-    spacer-1184: Spacer
-  branding:
-    branding-9291: Branding
+    spacer-1065: Spacer
   mobile-menu:
     mobile-menu-5769: Mobile-menu
-  messages:
-    system-messages-4129: 'System Messages'
-  logo:
-    logo-4941: 'Logo / Image'
 inherit:
   blog:
     navigation: navigation
-    header: header
     system-messages-4129: system-messages-3064
     logo-4941: logo-7607
     menu-7848: menu-1609
+    menu-7484: menu-8000
     custom-4848: custom-6564
+    header: header
   about:
     custom-8152: custom-3566
+  default:
+    footer: footer
+    menu-9266: menu-1837
+    menu-4422: menu-6570
+    menu-8553: menu-9412
+    menu-7012: menu-3453
+    logo-7749: logo-9571
+    copyright-4682: copyright-1736
+    spacer-1065: spacer-2556
+    social-8451: social-7256

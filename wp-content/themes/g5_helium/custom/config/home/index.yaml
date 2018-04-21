@@ -1,5 +1,5 @@
 name: home
-timestamp: 1516703984
+timestamp: 1517662737
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -27,12 +27,13 @@ particles:
     logo-5561: 'Logo / Image'
   menu:
     menu-8447: Menu
+    menu-2768: Menu
     menu-9072: Menu
     menu-3371: Menu
     menu-2194: Menu
     menu-2197: Menu
   custom:
-    custom-8073: 'Custom HTML'
+    custom-4448: 'Custom HTML'
     custom-6676: 'Custom HTML'
     custom-4035: 'Custom HTML'
     custom-9319: 'Custom HTML'
@@ -50,7 +51,8 @@ inherit:
   about:
     system-messages-5537: system-messages-2770
     logo-1176: logo-5067
-    menu-8447: menu-3355
+    menu-8447: menu-2524
+    menu-2768: menu-5767
     footer: footer
     menu-9072: menu-6699
     menu-3371: menu-3490

@@ -4,8 +4,16 @@ preset:
   name: fullpage
   timestamp: 1513263333
 layout:
-  /navigation/: {  }
-  header: {  }
+  /navigation/:
+    -
+      - system-messages-3528
+    -
+      - 'logo-1805 25'
+      - 'menu-6869 50'
+      - 'menu-6279 25'
+    -
+      - custom-7510
+  /header/: {  }
   /main/:
     -
       - custom-5403
@@ -20,12 +28,11 @@ structure:
     type: section
     attributes:
       boxed: ''
+      class: ''
   header:
-    inherit:
-      outline: blog
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: '2'
+      class: ''
   main:
     attributes:
       boxed: ''
@@ -36,6 +43,39 @@ structure:
         - attributes
         - children
 content:
+  system-messages-3528:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: system-messages-2770
+  logo-1805:
+    title: 'Logo / Image'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: logo-5067
+  menu-6869:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-2524
+  menu-6279:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-5767
+  custom-7510:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"tagline\">\n   <h1>Terms & Conditions</h1>\n</div>"
   custom-5403:
     title: Breadcrumbs
     inherit:

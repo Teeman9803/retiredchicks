@@ -42,12 +42,12 @@ expanded:
   background: '#363636'
   text-color: '#ffffff'
 footer:
-  background: '#474747'
-  text-color: '#ffffff'
+  background: '#2a2a2a'
+  text-color: ''
 offcanvas:
-  background: '#474747'
-  text-color: '#eceeef'
-  toggle-color: '#a8a7a7'
+  background: '#2a2a2a'
+  text-color: '#eaeaea'
+  toggle-color: '#eaeaea'
   toggle-visibility: '1'
   width: 12rem
 breakpoints:

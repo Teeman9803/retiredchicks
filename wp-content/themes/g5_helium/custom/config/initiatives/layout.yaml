@@ -21,13 +21,7 @@ layout:
           -
             - 'position-widget-7034 75'
             - 'social-3179 25'
-  /footer/:
-    -
-      - position-footer
-    -
-      - 'copyright-6344 40'
-      - 'spacer-1184 30'
-      - 'branding-9291 30'
+  footer: {  }
   offcanvas:
     -
       - mobile-menu-5769
@@ -48,18 +42,25 @@ structure:
   sidebar:
     type: section
     subtype: aside
+    attributes:
+      class: initiatives-section
     block:
-      fixed: 1
+      fixed: '1'
   container-main:
     attributes:
       boxed: ''
   footer:
-    attributes:
-      boxed: ''
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
 content:
   menu-4581:
     attributes:
       menu: initiatives
+    block:
+      class: 'menu menu-vertical'
   custom-8152:
     title: Breadcrumbs
     inherit:
@@ -72,6 +73,3 @@ content:
     attributes:
       widget: '{"type":"widget","widget":"tag_cloud","title":"Tag Cloud","options":{"widget":{"title":"","count":0,"taxonomy":"post_tag"}}}'
       key: widget
-  position-footer:
-    attributes:
-      key: footer

@@ -4,7 +4,15 @@ preset:
   name: fullpage
   timestamp: 1513263333
 layout:
-  navigation: {  }
+  /navigation/:
+    -
+      - system-messages-3748
+    -
+      - 'logo-1465 25'
+      - 'menu-5925 50'
+      - 'menu-1244 25'
+    -
+      - custom-3048
   /header/: {  }
   /main/:
     -
@@ -18,11 +26,9 @@ layout:
 structure:
   navigation:
     type: section
-    inherit:
-      outline: about
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: ''
+      class: ''
   header:
     attributes:
       boxed: '2'
@@ -37,6 +43,39 @@ structure:
         - attributes
         - children
 content:
+  system-messages-3748:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: system-messages-2770
+  logo-1465:
+    title: 'Logo / Image'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: logo-5067
+  menu-5925:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-2524
+  menu-1244:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-5767
+  custom-3048:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"tagline\">\n   <h1>Contact Us</h1>\n</div>"
   custom-2493:
     title: Breadcrumbs
     inherit:

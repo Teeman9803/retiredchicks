@@ -1,5 +1,5 @@
 name: checkout
-timestamp: 1516703984
+timestamp: 1517578417
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -26,8 +26,8 @@ particles:
     logo-6558: 'Logo / Image'
     logo-7446: 'Logo / Image'
   menu:
-    menu-8116: Menu
-    menu-9764: Menu
+    menu-9835: Menu
+    menu-2322: Menu
     menu-8165: Menu
     menu-9458: Menu
     menu-5286: Menu
@@ -44,7 +44,8 @@ inherit:
     custom-5765: custom-3566
     system-messages-7792: system-messages-2770
     logo-6558: logo-5067
-    menu-8116: menu-3355
+    menu-9835: menu-2524
+    menu-2322: menu-5767
     custom-2578: custom-6122
   default:
     footer: footer

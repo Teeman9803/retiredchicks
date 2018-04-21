@@ -27,8 +27,20 @@
 
 
 .home-section .home-social .grid-stack div:nth-child(3) .post-info {
-  text-align:center;
+  width: 100%;
   line-height:1.4;
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: white;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: white;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: white;
+  }
 }
 
 .home-section .home-social .grid-stack div:nth-child(3) .post-info .title {
@@ -47,24 +59,20 @@
   background-color: transparent !important;
 }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #fff;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: #fff;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: #fff;
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: #fff;
-
-}
-
 .g-home-particles.g-helium-style #g-navigation {
   height: auto;
   z-index: 11;
 }
-.g-home-particles.g-helium-style #g-header {
-  margin-top: -19.5rem;
+
+.g-owlcarousel.has-color-overlay .owl-stage > .owl-item {
+  &:nth-child(odd) .g-owlcarousel-item-img:after, &:nth-child(even) .g-owlcarousel-item-img:after {
+    background-image: none;
+    background-color: #1a1a1a;
+  }
+}
+
+.g-owlcarousel-item-title {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 1.7;
 }
