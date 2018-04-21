@@ -1,5 +1,5 @@
 name: my_account
-timestamp: 1517670904
+timestamp: 1524306897
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -30,14 +30,14 @@ particles:
     custom-6296: Breadcrumbs
   content:
     system-content-9283: 'Page Content'
+  mobile-menu:
+    mobile-menu-7513: Mobile-menu
   copyright:
     copyright-7460: Copyright
   spacer:
     spacer-4126: Spacer
   social:
     social-4903: Social
-  mobile-menu:
-    mobile-menu-7513: Mobile-menu
 inherit:
   about:
     system-messages-7375: system-messages-2770

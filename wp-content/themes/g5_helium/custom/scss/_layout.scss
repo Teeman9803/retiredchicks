@@ -91,6 +91,18 @@ div.wc_ss_btns > ul > li > a {
   color: #fff !important;
 }
 
+div.wc_ss_btns > ul > li.facebook > a {
+  color: rgb(59, 89, 152) !important;
+}
+
+div.wc_ss_btns > ul > li.twitter > a {
+  color: rgb(0, 182, 241) !important;
+}
+
+div.wc_ss_btns > ul > li.email > a {
+  color: rgb(244, 0, 131) !important;
+}
+
 div.wc_ss_btns > span {
   text-transform: uppercase;
   font-weight: 600;

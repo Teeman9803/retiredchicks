@@ -1,5 +1,5 @@
 name: terms_and_conditions
-timestamp: 1517669873
+timestamp: 1524306897
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -30,14 +30,14 @@ particles:
     custom-5403: Breadcrumbs
   content:
     system-content-9689: 'Page Content'
+  mobile-menu:
+    mobile-menu-8828: Mobile-menu
   copyright:
     copyright-8679: Copyright
   spacer:
     spacer-2311: Spacer
   social:
     social-1146: Social
-  mobile-menu:
-    mobile-menu-8828: Mobile-menu
 inherit:
   about:
     system-messages-3528: system-messages-2770

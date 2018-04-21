@@ -1,5 +1,5 @@
 name: privacy
-timestamp: 1517670753
+timestamp: 1524306897
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -30,14 +30,14 @@ particles:
     custom-1452: Breadcrumbs
   content:
     system-content-8940: 'Page Content'
+  mobile-menu:
+    mobile-menu-2592: Mobile-menu
   copyright:
     copyright-6303: Copyright
   spacer:
     spacer-1614: Spacer
   social:
     social-9870: Social
-  mobile-menu:
-    mobile-menu-2592: Mobile-menu
 inherit:
   about:
     system-messages-4709: system-messages-2770

@@ -1,5 +1,5 @@
 name: return_information
-timestamp: 1517670839
+timestamp: 1524306897
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -30,14 +30,14 @@ particles:
     custom-5088: Breadcrumbs
   content:
     system-content-6865: 'Page Content'
+  mobile-menu:
+    mobile-menu-8677: Mobile-menu
   copyright:
     copyright-3810: Copyright
   spacer:
     spacer-8867: Spacer
   social:
     social-9813: Social
-  mobile-menu:
-    mobile-menu-8677: Mobile-menu
 inherit:
   about:
     system-messages-6271: system-messages-2770

@@ -1,5 +1,5 @@
 name: contact
-timestamp: 1517670990
+timestamp: 1524306897
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -30,14 +30,14 @@ particles:
     custom-2493: Breadcrumbs
   content:
     system-content-3388: 'Page Content'
+  mobile-menu:
+    mobile-menu-6894: Mobile-menu
   copyright:
     copyright-2935: Copyright
   spacer:
     spacer-1754: Spacer
   social:
     social-1046: Social
-  mobile-menu:
-    mobile-menu-6894: Mobile-menu
 inherit:
   about:
     system-messages-3748: system-messages-2770
