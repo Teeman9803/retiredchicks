@@ -1,0 +1,1 @@
+70 http://localhost:8888/retiredchicks/shop/
