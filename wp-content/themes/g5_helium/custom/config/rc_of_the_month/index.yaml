@@ -1,5 +1,5 @@
 name: rc_of_the_month
-timestamp: 1524306897
+timestamp: 1530089458
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -14,11 +14,18 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
+  messages:
+    system-messages-3964: 'System Messages'
+  logo:
+    logo-1152: 'Logo / Image'
+  menu:
+    menu-6886: Menu
+    menu-3365: Menu
   custom:
-    custom-6034: Breadcrumbs
     custom-2105: 'Custom HTML'
-  content:
-    system-content-7703: 'Page Content'
+    custom-6034: Breadcrumbs
+  contentarray:
+    contentarray-2909: 'WordPress Posts'
   position:
     position-footer: Footer
   copyright:
@@ -29,19 +36,10 @@ particles:
     branding-2142: Branding
   mobile-menu:
     mobile-menu-6314: Mobile-menu
-  messages:
-    system-messages-3964: 'System Messages'
-  logo:
-    logo-1152: 'Logo / Image'
-  menu:
-    menu-6886: Menu
-    menu-3365: Menu
 inherit:
   about:
-    navigation: navigation
-    custom-6034: custom-3566
     system-messages-3964: system-messages-2770
     logo-1152: logo-5067
     menu-6886: menu-2524
     menu-3365: menu-5767
-    custom-2105: custom-6122
+    custom-6034: custom-3566

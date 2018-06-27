@@ -1,0 +1,86 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: fullpage
+  timestamp: 1513263333
+layout:
+  /navigation/:
+    -
+      - system-messages-3233
+    -
+      - 'logo-4434 25'
+      - 'menu-9378 50'
+      - 'menu-7010 25'
+    -
+      - custom-4824
+  /header/: {  }
+  /main/:
+    -
+      - custom-4017
+    -
+      - system-content-9300
+  footer: {  }
+  offcanvas:
+    -
+      - mobile-menu-9910
+structure:
+  navigation:
+    type: section
+    attributes:
+      boxed: ''
+      class: ''
+  header:
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - children
+content:
+  system-messages-3233:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: system-messages-2770
+  logo-4434:
+    title: 'Logo / Image'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: logo-5067
+  menu-9378:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-2524
+  menu-7010:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-5767
+  custom-4824:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"tagline\">\n <h1>RC of the Month</h1>\n</div>"
+      twig: '1'
+  custom-4017:
+    title: Breadcrumbs
+    inherit:
+      outline: about
+      particle: custom-3566
+      include:
+        - attributes
+        - block

@@ -1,6 +1,4 @@
-context:
-  -
-    is_single: true
+context: {  }
 menu: {  }
 language: {  }
 post:
@@ -33,6 +31,9 @@ post:
     245: true
   shop_webhook:
     is_singular: true
-taxonomy: {  }
+taxonomy:
+  category:
+    20: true
+    38: true
 archive: {  }
 woocommerce: {  }

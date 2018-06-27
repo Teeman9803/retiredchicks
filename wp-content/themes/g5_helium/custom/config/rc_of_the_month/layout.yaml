@@ -4,13 +4,21 @@ preset:
   name: fullpage
   timestamp: 1513263333
 layout:
-  navigation: {  }
+  /navigation/:
+    -
+      - system-messages-3964
+    -
+      - 'logo-1152 25'
+      - 'menu-6886 50'
+      - 'menu-3365 25'
+    -
+      - custom-2105
   /header/: {  }
   /main/:
     -
       - custom-6034
     -
-      - system-content-7703
+      - contentarray-2909
   /footer/:
     -
       - position-footer
@@ -24,11 +32,9 @@ layout:
 structure:
   navigation:
     type: section
-    inherit:
-      outline: about
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: ''
+      class: ''
   header:
     attributes:
       boxed: ''
@@ -39,6 +45,39 @@ structure:
     attributes:
       boxed: ''
 content:
+  system-messages-3964:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: system-messages-2770
+  logo-1152:
+    title: 'Logo / Image'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: logo-5067
+  menu-6886:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-2524
+  menu-3365:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-5767
+  custom-2105:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"tagline\">\n   <h1>RC of the Month</h1>\n</div>"
   custom-6034:
     title: Breadcrumbs
     inherit:
@@ -47,6 +86,36 @@ content:
       include:
         - attributes
         - block
+  contentarray-2909:
+    title: 'WordPress Posts'
+    attributes:
+      post:
+        filter:
+          categories: '83'
+          posts: ''
+          sticky: ''
+        limit:
+          total: ''
+          columns: '1'
+          start: '0'
+        sort:
+          orderby: date
+          ordering: ASC
+        display:
+          title:
+            enabled: show
+          read_more:
+            enabled: ''
+          category:
+            enabled: show
+          text:
+            type: content
+            limit: '100'
+            formatting: html
+      css:
+        class: ''
+    block:
+      id: rc-of-the-month
   position-footer:
     attributes:
       key: footer

@@ -1,5 +1,5 @@
 name: blog_single
-timestamp: 1524306897
+timestamp: 1530089458
 version: 7
 preset:
   image: 'gantry-admin://images/layouts/default.png'
@@ -13,13 +13,6 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  custom:
-    custom-4017: Breadcrumbs
-    custom-4824: 'Custom HTML'
-  content:
-    system-content-5815: 'Page Content'
-  mobile-menu:
-    mobile-menu-9910: Mobile-menu
   messages:
     system-messages-3233: 'System Messages'
   logo:
@@ -32,6 +25,13 @@ particles:
     menu-8736: Menu
     menu-6832: Menu
     menu-5615: Menu
+  custom:
+    custom-4824: 'Custom HTML'
+    custom-4017: Breadcrumbs
+  content:
+    system-content-5815: 'Page Content'
+  mobile-menu:
+    mobile-menu-9910: Mobile-menu
   copyright:
     copyright-5318: Copyright
   spacer:
@@ -40,13 +40,11 @@ particles:
     social-1948: Social
 inherit:
   about:
-    navigation: navigation
-    custom-4017: custom-3566
     system-messages-3233: system-messages-2770
     logo-4434: logo-5067
     menu-9378: menu-2524
     menu-7010: menu-5767
-    custom-4824: custom-6122
+    custom-4017: custom-3566
   default:
     footer: footer
     menu-9151: menu-1837

@@ -1,0 +1,57 @@
+name: rc_of_the_month_single
+timestamp: 1530089458
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: fullpage
+  timestamp: 1513263333
+positions: {  }
+sections:
+  navigation: Navigation
+  header: Header
+  main: Main
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-3233: 'System Messages'
+  logo:
+    logo-4434: 'Logo / Image'
+    logo-6816: 'Logo / Image'
+  menu:
+    menu-9378: Menu
+    menu-7010: Menu
+    menu-5673: Menu
+    menu-7101: Menu
+    menu-6860: Menu
+    menu-4675: Menu
+  custom:
+    custom-4824: 'Custom HTML'
+    custom-4017: Breadcrumbs
+  content:
+    system-content-9300: 'Page Content'
+  mobile-menu:
+    mobile-menu-9910: Mobile-menu
+  copyright:
+    copyright-2711: Copyright
+  spacer:
+    spacer-3448: Spacer
+  social:
+    social-6847: Social
+inherit:
+  about:
+    system-messages-3233: system-messages-2770
+    logo-4434: logo-5067
+    menu-9378: menu-2524
+    menu-7010: menu-5767
+    custom-4017: custom-3566
+  default:
+    footer: footer
+    menu-5673: menu-1837
+    menu-7101: menu-6570
+    menu-6860: menu-9412
+    menu-4675: menu-3453
+    logo-6816: logo-9571
+    copyright-2711: copyright-1736
+    spacer-3448: spacer-2556
+    social-6847: social-7256

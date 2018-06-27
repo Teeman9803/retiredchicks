@@ -1,0 +1,22 @@
+context: {  }
+menu: {  }
+language: {  }
+post:
+  post:
+    565: true
+    561: true
+    557: true
+    553: true
+    559: true
+    555: true
+    563: true
+    567: true
+    569: true
+    573: true
+    575: true
+    571: true
+  page:
+    25: true
+taxonomy: {  }
+archive: {  }
+woocommerce: {  }

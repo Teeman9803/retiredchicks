@@ -235,12 +235,12 @@ content:
     attributes:
       post:
         filter:
-          categories: '18'
+          categories: '84'
           posts: ''
           sticky: ''
         limit:
-          total: '4'
-          columns: '4'
+          total: '1'
+          columns: '1'
           start: '0'
         sort:
           orderby: date
