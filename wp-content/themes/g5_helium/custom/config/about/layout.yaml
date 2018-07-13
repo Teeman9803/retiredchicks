@@ -347,7 +347,7 @@ content:
           posts: ''
           sticky: ''
         limit:
-          total: '2'
+          total: '5'
           columns: '1'
           start: '0'
         sort:

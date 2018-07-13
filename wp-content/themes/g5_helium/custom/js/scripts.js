@@ -5,8 +5,14 @@
 	var posts = document.querySelectorAll('.initiative-posts .g-grid');
 	var ids = ['volunteering', 'rcementoring', 'rcevents', 'rcinspiration', 'business'];
 
-   [].forEach.call(posts, function(post, index) {
-   	 post.setAttribute('id', ids[index]);
+   var getTitle = function(post) {
+       var title = post.querySelector('a').innerHTML.trim().toLowerCase();
+       return title.replace(/-|\s/g, '');
+   };
+
+   [].forEach.call(posts, function(post) {
+   	 var idx = ids.indexOf(getTitle(post));
+   	 post.setAttribute('id', ids[idx]);
    });
 
 	var toggleContent = function(e) {
