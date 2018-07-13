@@ -3,7 +3,7 @@
 (function($) {
 
 	var posts = document.querySelectorAll('.initiative-posts .g-grid');
-	var ids = ['volunteering', 'rcementoring', 'rcevents', 'rcinspiration', 'business'];
+	var ids = ['volunteering', 'rcementoring', 'rcevents', 'rcinspiration', 'businessopportunities'];
 
    var getTitle = function(post) {
        var title = post.querySelector('a').innerHTML.trim().toLowerCase();
