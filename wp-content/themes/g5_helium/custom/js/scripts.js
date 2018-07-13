@@ -3,7 +3,7 @@
 (function($) {
 
 	var posts = document.querySelectorAll('.initiative-posts .g-grid');
-	var ids = ['volunteering', 'rcementoring'];
+	var ids = ['volunteering', 'rcementoring', 'rcevents', 'rcinspiration', 'business'];
 
    [].forEach.call(posts, function(post, index) {
    	 post.setAttribute('id', ids[index]);
