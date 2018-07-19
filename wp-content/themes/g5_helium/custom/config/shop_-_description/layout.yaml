@@ -1,63 +1,82 @@
 version: 2
 preset:
-  image: 'gantry-admin://images/layouts/2-col-right.png'
-  name: 2-col-right
-  timestamp: 1513307168
+  image: 'gantry-admin://images/layouts/default.png'
+  name: fullpage
+  timestamp: 1513263333
 layout:
-  /container-main/:
+  /navigation/:
     -
-      -
-        'header 50':
-          -
-            - position-header
-        navigation:
-          -
-            - 'menu-8139 75'
-            - 'menu-1144 25'
-        messages:
-          -
-            - system-messages-9548
-        main:
-          -
-            - custom-8900
-          -
-            - system-content-6156
-        footer:
-          -
-            - 'copyright-4351 40'
-            - 'spacer-4575 30'
-            - 'branding-8622 30'
-      -
-        'aside 50':
-          -
-            - position-aside
+      - system-messages-2488
+    -
+      - 'logo-4923 25'
+      - 'menu-5771 50'
+      - 'menu-7970 25'
+    -
+      - custom-4044
+  /header/: {  }
+  /main/:
+    -
+      - custom-8900
+    -
+      - system-content-6156
+  footer: {  }
   offcanvas:
     -
       - mobile-menu-1058
 structure:
   navigation:
     type: section
-  messages:
-    type: section
-  aside:
-    block:
-      fixed: 1
-  container-main:
     attributes:
       boxed: ''
+      class: ''
+  header:
+    attributes:
+      boxed: ''
+      class: ''
+  main:
+    attributes:
+      boxed: ''
+  footer:
+    inherit:
+      outline: default
+      include:
+        - attributes
+        - block
+        - children
 content:
-  position-header:
+  system-messages-2488:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: system-messages-2770
+  logo-4923:
+    title: 'Logo / Image'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: logo-5067
+  menu-5771:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-2524
+  menu-7970:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-5767
+  custom-4044:
+    title: 'Custom HTML'
     attributes:
-      key: header
-  menu-8139:
-    block:
-      class: center
-  menu-1144:
-    attributes:
-      menu: user-menu
-      mobileTarget: '1'
-    block:
-      class: menu-right
+      html: "<div class=\"tagline\">\n <div class=\"tag\">Products</div>\n   <h1>Shop</h1>\n</div>"
   custom-8900:
     title: Breadcrumbs
     inherit:
@@ -66,6 +85,3 @@ content:
       include:
         - attributes
         - block
-  position-aside:
-    attributes:
-      key: aside

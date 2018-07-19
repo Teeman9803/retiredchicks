@@ -1,42 +1,57 @@
 name: shop_-_description
-timestamp: 1531484523
+timestamp: 1531997600
 version: 7
 preset:
-  image: 'gantry-admin://images/layouts/2-col-right.png'
-  name: 2-col-right
-  timestamp: 1513307168
-positions:
-  header: Header
-  aside: Aside
+  image: 'gantry-admin://images/layouts/default.png'
+  name: fullpage
+  timestamp: 1513263333
+positions: {  }
 sections:
-  header: Header
   navigation: Navigation
-  messages: Messages
+  header: Header
   main: Main
   footer: Footer
-  aside: Aside
   offcanvas: Offcanvas
 particles:
-  position:
-    position-header: Header
-    position-aside: Aside
-  menu:
-    menu-8139: Menu
-    menu-1144: Menu
   messages:
-    system-messages-9548: 'System Messages'
+    system-messages-2488: 'System Messages'
+  logo:
+    logo-4923: 'Logo / Image'
+    logo-1973: 'Logo / Image'
+  menu:
+    menu-5771: Menu
+    menu-7970: Menu
+    menu-1966: Menu
+    menu-6211: Menu
+    menu-4193: Menu
+    menu-1916: Menu
   custom:
+    custom-4044: 'Custom HTML'
     custom-8900: Breadcrumbs
   content:
     system-content-6156: 'Page Content'
   copyright:
-    copyright-4351: Copyright
+    copyright-1738: Copyright
   spacer:
-    spacer-4575: Spacer
-  branding:
-    branding-8622: Branding
+    spacer-2291: Spacer
+  social:
+    social-3078: Social
   mobile-menu:
     mobile-menu-1058: Mobile-menu
 inherit:
   about:
+    system-messages-2488: system-messages-2770
+    logo-4923: logo-5067
+    menu-5771: menu-2524
+    menu-7970: menu-5767
     custom-8900: custom-3566
+  default:
+    footer: footer
+    menu-1966: menu-1837
+    menu-6211: menu-6570
+    menu-4193: menu-9412
+    menu-1916: menu-3453
+    logo-1973: logo-9571
+    copyright-1738: copyright-1736
+    spacer-2291: spacer-2556
+    social-3078: social-7256

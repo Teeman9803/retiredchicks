@@ -118,10 +118,21 @@
 }
 
 .shop-section {
+  .grid-post-item {
+    .categories {
+      display: none;
+    }
+    .title {
+       a:hover {
+         color : $base-color;
+         text-decoration: underline;
+       }
+    }
+  }
   .grid-post-item .thumbnail-image {
-    background-size: 10rem;
-    background-repeat: no-repeat;
-    background-color: $light-gray;
+    //background-size: 10rem;
+    //background-repeat: no-repeat;
+    //background-color: $light-gray;
   }
   .grid-post-item .post-info {
     padding: 40px;
@@ -234,3 +245,5 @@
   background: darken($base-color, 5%);
   color: #fff;
 }
+
+

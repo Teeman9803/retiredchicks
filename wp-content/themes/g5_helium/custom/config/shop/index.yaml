@@ -1,5 +1,5 @@
 name: shop
-timestamp: 1531484523
+timestamp: 1531997614
 version: 7
 preset:
   image: 'gantry-media://images/admin/layouts/2-col-left.png'
@@ -14,15 +14,6 @@ sections:
   footer: Footer
   offcanvas: Offcanvas
 particles:
-  widget:
-    position-widget-8211: Widget
-  custom:
-    custom-9193: Breadcrumbs
-    custom-3418: 'Custom HTML'
-  content:
-    system-content-2401: 'Page Content'
-  mobile-menu:
-    mobile-menu-7655: Mobile-menu
   messages:
     system-messages-1833: 'System Messages'
   logo:
@@ -35,21 +26,28 @@ particles:
     menu-9794: Menu
     menu-3975: Menu
     menu-2627: Menu
+  custom:
+    custom-3418: 'Custom HTML'
+    custom-9193: Breadcrumbs
+  widget:
+    position-widget-8211: Widget
+  content:
+    system-content-2401: 'Page Content'
   copyright:
     copyright-5627: Copyright
   spacer:
     spacer-6591: Spacer
   social:
     social-4357: Social
+  mobile-menu:
+    mobile-menu-7655: Mobile-menu
 inherit:
   about:
-    navigation: navigation
-    custom-9193: custom-3566
     system-messages-1833: system-messages-2770
     logo-2644: logo-5067
     menu-1698: menu-2524
     menu-7117: menu-5767
-    custom-3418: custom-6122
+    custom-9193: custom-3566
   default:
     footer: footer
     menu-7376: menu-1837

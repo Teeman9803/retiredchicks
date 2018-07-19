@@ -4,7 +4,15 @@ preset:
   name: 2-col-left
   timestamp: 1513308258
 layout:
-  navigation: {  }
+  /navigation/:
+    -
+      - system-messages-1833
+    -
+      - 'logo-2644 25'
+      - 'menu-1698 50'
+      - 'menu-7117 25'
+    -
+      - custom-3418
   /header/: {  }
   /container-main/:
     -
@@ -25,11 +33,9 @@ layout:
 structure:
   navigation:
     type: section
-    inherit:
-      outline: about
-      include:
-        - attributes
-        - children
+    attributes:
+      boxed: ''
+      class: ''
   header:
     attributes:
       boxed: '0'
@@ -51,6 +57,39 @@ structure:
         - attributes
         - children
 content:
+  system-messages-1833:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: system-messages-2770
+  logo-2644:
+    title: 'Logo / Image'
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: logo-5067
+  menu-1698:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-2524
+  menu-7117:
+    inherit:
+      outline: about
+      include:
+        - attributes
+        - block
+      particle: menu-5767
+  custom-3418:
+    title: 'Custom HTML'
+    attributes:
+      html: "<div class=\"tagline\">\n <div class=\"tag\">Products</div>\n   <h1>Shop</h1>\n</div>"
   position-widget-8211:
     attributes:
       enabled: 0
